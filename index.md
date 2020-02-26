@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Title of page
+title: Introduction
 nav_order: 1
 ---
