@@ -28,8 +28,8 @@ Making maps is hard. And without practice, working in the web is hard too. While
 - **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
 
 ### Workshop Data
-All of the data you'll need for this workshop is included in this repository. To get started you'll need to download and save it to your local machine. As we go through the hands-on part,  you can simply copy/paste the text from this page to the files on your local machine.
+All of the data for this workshop is free and openly available, but to get started you'll need to download and save it to your computer. As we go through the hands-on part, you'll work with this data in your source-code editor and copy/paste the code provided to you.   
 
-**:heavy_check_mark: Click on the green download link, then download the ZIP:**
+Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
-![Download](/download.png "Download")
+[Download Data](/into-leaflet-data.zip){: .btn .btn-blue }
