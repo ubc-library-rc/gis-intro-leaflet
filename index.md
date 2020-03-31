@@ -32,4 +32,4 @@ All of the data for this workshop is free and openly available, but to get start
 
 Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
-[Download Data](/into-leaflet-data.zip){: .btn .btn-blue }
+[Download Data](gis-intro-leaflet/into-leaflet-data.zip){: .btn .btn-blue }
