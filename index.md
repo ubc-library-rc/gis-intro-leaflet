@@ -8,7 +8,6 @@ nav_order: 1
 
 <img src="leaflet_logo.png" alt="Leaflet Logo" style="margin: auto;" />
 
-![Leaflet Logo](leaflet_logo.png)
 
 ## Introduction
 
