@@ -4,7 +4,7 @@ title: Introduction
 has_children: true
 nav_order: 1
 ---
-#Introduction to Web Maps with Leaflet
+# Introduction to Web Maps with Leaflet
 
 ## Introduction
 
@@ -34,4 +34,4 @@ All of the data for this workshop is free and openly available, but to get start
 
 Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
-[Download Data](into-leaflet-data.zip){: .btn .btn-blue }
+[Download Data](intro-leaflet-data.zip){: .btn .btn-blue }
