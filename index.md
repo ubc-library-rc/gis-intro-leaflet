@@ -8,6 +8,8 @@ nav_order: 1
 
 <img src="leaflet_logo.png" alt="Leaflet Logo" style="margin: auto;" />
 
+![Leaflet Logo](leaflet_logo.png)
+
 ## Introduction
 
 This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions (in person). As a bonus, students will create and have boilerplate code to be built upon and tinkered with at a later time.    
