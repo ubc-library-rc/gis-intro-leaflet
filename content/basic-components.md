@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Basic Components of a Web Map
+title: Basic Components
 nav_order: 2
+has_children: true
 ---
 
 # Basic Components of a Web Map
