@@ -55,11 +55,11 @@ Below is a block of code - this is our map boilerplate. This was included in the
 
 ```
 
-<p>&nbsp;</p>
+
 To Do
 {: .label .label-green }
 Navigate into your "intro-leaflet-workshop" folder and open the <code>boilerplate.html</code> in your web browser.  You may need to "right-click" and "open with" your browser of choice.
-<p>&nbsp;</p>
+
 
 ### In a Browser
 

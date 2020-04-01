@@ -12,21 +12,21 @@ The building layer that we added to our map contains attribute values for each o
 ```js
 function onEachFeature(feature, layer) {if (feature.properties && feature.properties.NAME) {layer.bindPopup(feature.properties.NAME);}}
 ```    
-<p>&nbsp;</p>
+
 To Do
 {: .label .label-green }
 Copy the function above and paste it inside the <code>script</code> in your HTML document.     
-<p>&nbsp;</p>
+
 Then in order for your GeoJSON layer to respond to this function, we need to add the function's name to the layer's options.    
 
 ```js
 L.geoJSON(ubcbuildings, {onEachFeature}).addTo(mymap);
 ```    
-<p>&nbsp;</p>
+
 To Do
 {: .label .label-green }
 Copy the text above and paste it to replace the existing text in your HTML document.     
-<p>&nbsp;</p>
+
 
 If all went as planned you should see this in your browser:    
 
