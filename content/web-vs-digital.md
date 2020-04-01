@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Digital" vs "Web" Map
+title: Digital vs Web Map
 parent: Introduction
 nav_order: 2
 ---
 
-# "Digital" vs "Web" Map
+# Digital vs Web Map
 
 While we're talking about maps loading and working in the web, let's also talk the difference between a **web map** and a **digital map**. The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
 > The process by which a collection of data is compiled and formatted into a virtual image.    
