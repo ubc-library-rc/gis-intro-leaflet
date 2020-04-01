@@ -34,7 +34,7 @@ Making maps is hard. And without practice, working in the web is hard too. While
 
 ### Workshop Data
 All of the data for this workshop is free and openly available, but to get started you'll need to download and save it to your computer. As we go through the hands-on part, you'll work with this data in your source-code editor and copy/paste the code provided to you.   
-
+<p>&nbsp;</p>
 To Do
 {: .label .label-green }
 Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
