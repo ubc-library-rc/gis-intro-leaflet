@@ -12,21 +12,21 @@ The building layer that we added to our map contains attribute values for each o
 ```js
 function onEachFeature(feature, layer) {if (feature.properties && feature.properties.NAME) {layer.bindPopup(feature.properties.NAME);}}
 ```    
-<br />
+
 To Do
 {: .label .label-green }
 - Copy the function above and paste it inside the <code>script</code> in your HTML document.     
-<br />
+
 Then in order for your GeoJSON layer to respond to this function, we need to add the function's name to the layer's options.    
 
 ```js
 L.geoJSON(ubcbuildings, {onEachFeature}).addTo(mymap);
 ```    
-<br />
+
 To Do
 {: .label .label-green }
 - Copy the text above and paste it to replace the existing text in your HTML document.     
-<br />
+
 If all went as planned you should see this in your browser:    
 
 ![Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!](map07.png "Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!")
