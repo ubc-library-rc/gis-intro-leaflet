@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Map Data
+title: Data
 parent: Basic Components
 nav_order: 3
 ---

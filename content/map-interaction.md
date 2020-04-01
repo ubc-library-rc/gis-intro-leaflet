@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Map Interaction
+title: Interaction
 parent: Basic Components
 nav_order: 4
 ---

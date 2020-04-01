@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Map Tiles
+title: Tiles
 parent: Basic Components
 nav_order: 2
 ---
