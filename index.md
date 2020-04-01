@@ -11,19 +11,24 @@ nav_order: 1
 
 ## Introduction
 
-This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions (in person). As a bonus, students will create and have boilerplate code to be built upon and tinkered with at a later time.    
+This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting or virtual. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions. As a bonus, students will create and have boilerplate code to be built upon and tinkered with at a later time.    
+The hands on part of this workshop will work toward making an interactive web map of UBC-V Campus showing buildings and an informational popup window when each building is clicked. <!-- Something like this:    
+
+<iframe src="content/map07.html" width="100%" height="250" frameborder="0"></iframe>
+-->
+
 #### Software used     
 - **Internet browser (and an internet connection)**. The most recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers.
 - **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop uses [Atom](https://atom.io/) for screenshots, but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
-<!--
-#### GIS Resources at UBC:
+
+### Geospatial Information Resources at UBC:
 - General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)    
 - UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
-- UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)  
+- UBC's GIS email list: [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)  
 - UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)
 - Evan Thornberry, GIS Librarian @ UBC Library: evan.thornberry AT ubc.ca
--->
+
 
 #### Prerequisites
 Making maps is hard. And without practice, working in the web is hard too. While there are no actual prerequisites for the in person workshop, these things would be good to know before jumping right in, or to refer to later:
