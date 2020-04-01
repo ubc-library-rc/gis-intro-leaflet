@@ -9,7 +9,7 @@ nav_order: 1
 
 Below is a block of code - this is our map boilerplate. This was included in the .ZIP file that was downloaded at the start of this workshop, and now we need to open in in our source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
 
-```HTML
+```html
 <html>
   <head>
 
@@ -54,9 +54,12 @@ Below is a block of code - this is our map boilerplate. This was included in the
 </html>
 
 ```
+
+<br />
 To Do
 {: .label .label-green }
 -  Navigate into your "intro-leaflet-workshop" folder and open the <code>boilerplate.html</code> in your web browser.**  You may need to "right-click" and "open with" your browser of choice.
+<br />
 
 ### In a Browser
 
@@ -83,18 +86,18 @@ The stuff inside the <code>head</code> is the metadata for your browser about th
 If you copy either one of those links and paste it in a new tab in your browser, you’ll see a lot of raw code. By linking to the source, we avoid having to carry this text into our own document, while also being assured that the code we're using is up-to-date.
 
 You'll also see a link to something called <code>ubcbuildings.js</code>.
-```HTML
+```html
 <script src="./ubcbuildings.js" charset="utf-8"></script>
 ```
 This is a [relative path](https://www.w3schools.com/html/html_filepaths.asp) to a file that we will add to our map later on in the workshop. For now, all you have to know that this file is included in the .ZIP package that you downloaded to start, and not a link to an external web resource.
 
 ## Body
 The <code>body</code> is the container for the what you see formatted in your browser. Here, you have an HTML container for your map, which is styled to be the height of a full page.     
-```HTML   
+```html  
 <div id="mapid" style="height: 100%;"></div>
 ```    
 Also included in the <code>body</code> is a script that loads the map to your page.    
-```JavaScript
+```js
 var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
 
 var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
