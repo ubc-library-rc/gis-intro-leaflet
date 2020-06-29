@@ -31,6 +31,7 @@ One other great thing about GeoJSON, is that becuase they are open-source and si
 
 To Do
 {: .label .label-green }
-1. Copy the GeoJSON text above and paste it in the </>JSON panel in [geojson.io](http://geojson.io).
-2. Click the edit layer button (above the trash can) to move the marker to a different position, then save.
-3. In the Table panel, edit the GeoJSON file's attributes, by changing the name of the location.
+1. Delete existing geoJSON text on the </>JSON panel of [geojson.io](http://geojson.io).
+2. Copy the GeoJSON text above and replace what you just deleted on geojson.io.
+3. Click the edit layer button (above the trash can) to move the marker to a different position, then save.
+4. In the Table panel, edit the GeoJSON file's attributes, by changing the name of the location.
