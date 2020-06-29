@@ -31,7 +31,7 @@ Let's add a GeoJSON that represents UBC Buildings. Luckily, UBCs Campus and Comm
 
 If you ever wanted to make a variable for another geoJSON, this is how:
 1. Start with a geoJSON file.
-2. wrap it as a variable:
+2. Wrap it as a variable:
 ```js
 var [nameofyourvariable] = [your geoJSON text]
 ```
