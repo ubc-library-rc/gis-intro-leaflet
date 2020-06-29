@@ -27,7 +27,18 @@ You should see something like this (click on the marker too!):
 ## Add a GeoJSON
 GeoJSON are often more complex data than markers or shapes. But they can be added to your map similarly: by creating a new variable holding the values for the GeoJSON feature(s).    
 
-Let's add a GeoJSON that represents UBC Buildings. Luckily, UBCs Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, the buildings variable has already been created and we downloaded it as a separate file when we started. The variable's name <code>ubcbuildings</code>. To add it to our map, we'll need to include a Leaflet geoJSON layer so that our map loads this data when initialized:    
+Let's add a GeoJSON that represents UBC Buildings. Luckily, UBCs Campus and Community Planning releases [their geodata](https://github.com/UBCGeodata) as GeoJSON with an open license. For this workshop, the buildings variable has been pre-assembled, and came with the .zip data you downloaded at the beginning of this workshop (the file <code>ubcbuildings.js</code>).
+
+If you wanted to make a variable for another dataset, this is how it was prepared:
+- start with a geoJSON file
+- wrap your geoJSON as a variable:
+```js
+var [nameofyourvariable] = [your geoJSON text]
+```
+- save this file with a JavaScript file <code>.js</code> extension.f
+{: .note}
+
+To add the UBC buildings variable to our map, we'll need to include a Leaflet geoJSON layer so that our map loads this data when initialized:    
 
 
 To Do
