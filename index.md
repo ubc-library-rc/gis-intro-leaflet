@@ -41,4 +41,4 @@ To Do
 {: .label .label-green }
 Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
-[Download Data](intro-leaflet-data.zip){: .btn .btn-blue }
+[Download Data](content/intro-leaflet-data.zip){: .btn .btn-blue }
