@@ -31,7 +31,7 @@ The hands on part of this workshop will work toward making an interactive web ma
 Making maps is hard. And without practice, working in the web is hard too. While there are no actual prerequisites for the in person workshop, these things would be good to know before jumping right in, or to refer to later:
 
 - **Intro level knowledge of computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.
-- **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You'er not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
+- **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You're not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
 - **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
 
 ### Workshop Data
