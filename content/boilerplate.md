@@ -7,7 +7,7 @@ nav_order: 1
 
 # Map Boilerplate
 
-Below is a block of code - this is our map boilerplate. This was included in the .ZIP file that was downloaded at the start of this workshop, and now we need to open in in our source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
+Below is a block of code - this is our map boilerplate. This was included in the .ZIP file that was downloaded at the start of this workshop, and now we need to open it in our source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
 
 ```html
 <html>
