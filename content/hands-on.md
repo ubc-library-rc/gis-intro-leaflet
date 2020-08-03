@@ -8,7 +8,7 @@ has_children: true
 # Hands On: Build Your Own Web Map
 
 # Putting it into Perspective
-Before we start working on our map, let's just put things into perspective. This is an introductory workshop, and meant to get you started with the tools and give you the skills to move forward on your own. Within the greater web mapping ecosystem, we're touching on the essentials. And give you an idea of how what we are doing fits into that ecosystem, take a [look at this diagram from Maptime](http://maptime.io/anatomy-of-a-web-map/#84), and notice the <HTML> document, and the internet browser.
+Before we start working on our map, let’s just put things into perspective: This is an introductory workshop meant to get you started with the tools and skills to move forward on your own. Within the greater web mapping ecosystem context, we’re touching on the essentials. To give you an idea of where this workshop fits into that ecosystem, take a look at this diagram from [Maptime](http://maptime.io/). Note the .html document and the internet browser.
 ## Software Used
 We'll use two pieces of software - a web browser, which will render/display your map, and a source code editor to edit that map.
 ## Development Environment
