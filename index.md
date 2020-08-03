@@ -11,7 +11,7 @@ nav_order: 1
 
 ## Introduction
 
-This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting or virtual. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions. As a bonus, students will create and have boilerplate code to be built upon and tinkered with at a later time.    
+This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting or virtual. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions. As a bonus, students will create and have [boilerplate code](https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/) to be built upon and tinkered with at a later time.    
 The hands on part of this workshop will work toward making an interactive web map of UBC-V Campus showing buildings and an informational popup window when each building is clicked.     
 
 #### Geospatial Information Resources at UBC:
