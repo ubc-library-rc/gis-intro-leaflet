@@ -25,7 +25,7 @@ If you’re a GIS user, you have encountered a Shapefile. Shapefiles are the ind
       }
     }
 ```
-In contrast, a Shapefile is a binary (not text) format, so you wouldn't be able to read the file with human eyes. For these reasons, we're using GeoJSON files for this workshop.
+In contrast, a Shapefile is a binary (0s and 1s, not text) format, so you wouldn't be able to read the file with human eyes. For these reasons, we're using GeoJSON files for this workshop.
 
 One other great thing about GeoJSON, is that becuase they are open-source and simple to understand, there are several tools that allow you to create and edit them in the web, like [geojson.io](http://geojson.io).
 

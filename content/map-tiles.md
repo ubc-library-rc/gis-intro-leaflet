@@ -7,7 +7,7 @@ nav_order: 2
 
 # Map Tiles
 
-Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. Each tile is a 256px x 256px (traditionally a .png image at roughly 20-40kb each), making them quick to load over an internet connection. These tiles provide a geographic reference for other data layers that might be added later (we'll get to that in a minute). You've probably noticed them if you've had choppy internet connection and had to wait for data to load:    
+Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. Each tile is 256px by 256px (traditionally a .png image at roughly 20-40kb each), making them quick to load over an internet connection. These tiles provide a geographic reference for other data layers that you might add later (we'll get to that in a minute). You've probably noticed them if you've had choppy internet connection and had to wait for data to load:    
 
 ![tiles](tiles.gif)    
 
@@ -31,7 +31,7 @@ Here's the map tile grid for **zoom level 13 over Vancouver**:
 
 
 ## Tile Servers  
-You might be thinking: ***Where are all these tiles loading from?*** Well, there are services that render these tiles for consumption. The main two being Google and [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Tile_servers), but there are many others.     
+You might be thinking: ***Where are all these tiles loading from?*** Well, there are services that render these tiles for consumption. The main two are Google and [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Tile_servers), but there are many others.     
 
 You might also be thinking: ***Can I customize my own tiles to make them look cool?*** You can, with services like [Mapbox Studio](https://www.mapbox.com/mapbox-studio/). Or you can [set up your own server](https://medium.com/@Nithanaroy/create-your-own-tile-server-and-map-client-5f7515fff28) to render your own. But these options are both way beyond the scope of this workshop, so for now, don't worry about it. There are several out-of-the-box options to make your map tiles look sleek.    
 
@@ -43,6 +43,6 @@ Here are some interesting styles for the tile covering the south part of UBC Cam
 
 
 ## Raster and Vector Tiles    
-Another thing to understand about map tiles is that there are both raster and vector tiles. Raster tiles have been around longer, and so are a little simpler to tinker with when learning about and tinkering with web maps. This is why we're using raster tiles for this workshop. Features and attributes on raster tiles are static because they're just images, and there are other limitations on the way we can view and interact with them.    
+Another thing to understand about map tiles is that there are both raster and vector tiles. Raster tiles have been around longer, and so are a little simpler to tinker with when beginning to web map. That's why we're using raster tiles for this workshop. Features and attributes on raster tiles are static because such tiles are just images.
 
-Vector tiles contain vector data like feature names and other attribute data. While they have been around for several years, they are still newer and faster, and offer more customization options than raster tiles. These tiles are rendered as soon as your browser requests them from the tile server, freeing us from discrete zoom levels and map orientation. [Here's an example](https://openmaptiles.github.io/klokantech-terrain-gl-style/#13.88/49.2567/-123.2454/3.3/44).
+Vector tiles contain vector data like feature names and other attribute data. While they have been around for several years, they are still newer and faster, and offer more customization options than raster tiles. These tiles are rendered as soon as your browser requests them from a tile server, freeing us from discrete zoom levels and map orientation. [Here's an example](https://openmaptiles.github.io/klokantech-terrain-gl-style/#13.88/49.2567/-123.2454/3.3/44).
