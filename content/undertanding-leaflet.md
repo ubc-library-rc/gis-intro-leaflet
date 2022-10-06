@@ -13,3 +13,5 @@ Technically, Leaflet consists of JavaScript and CSS code libraries which power t
 
 ### In a Browser
 Take a look at this basic [Leaflet map example](https://ect123.s3.amazonaws.com/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
+
+<iframe src="https://ect123.s3.amazonaws.com/map01.html" style="width: 70%; height: 500px; margin-left: 15%;"></frame>
