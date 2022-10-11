@@ -42,3 +42,6 @@ To Do
 Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
 [Download Data](content/intro-leaflet-data.zip){: .btn .btn-blue }
+
+### What you will build
+<iframe src="./content/final_map.html" style="width:60%; height:600px; border:none; margin-left:20%"> </iframe>
