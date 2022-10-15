@@ -6,7 +6,7 @@ nav_order: 4
 
 # Next Steps
 
-You are not required to think about web maps ever again, but if this workshop has inspired you to expand your skills, try making another map on your own using data for a different location on your own. This will give you some clarity around where you might have some gaps in understanding. Remember, you can create your own GeoJSON with free tools like [geojson.io](http://geojson.io).
+If this workshop has inspired you to expand your skills, try making another map on your own using data for a different location on your own. This will give you some clarity around where you might have some gaps in understanding. Remember, you can create your own GeoJSON with free tools like [geojson.io](http://geojson.io).
 
 ***Keep in mind that not all data will be nicely packaged and cleaned. In fact, it never is. If you proceed to use data that you've found on the web, be prepared to spend time preparing your data to be usable with Leaflet and the web.***
 

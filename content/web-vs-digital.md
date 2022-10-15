@@ -7,7 +7,7 @@ nav_order: 2
 
 # Digital vs Web Map
 
-While we're talking about maps loading and working in the web, let's also talk the difference between a **web map** and a **digital map**. The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
+While we're talking about maps loading and working in the web, let's talk the difference between a **digital map** and a **web map**. The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
 > The process by which a collection of data is compiled and formatted into a virtual image.    
 
 ### Digital Maps
@@ -23,10 +23,10 @@ More commonly, we use this term for "born digital" maps like this cycling map fr
 <sub><sup>[Front of City of Vancouver Cycling 2019 Map](https://vancouver.ca/streets-transportation/cycling-routes-maps-and-trip-planner.aspx)</sup></sub>
 
 ### Web Maps
-Using the definition above, a web map is a type of digital map since it is derived from a computer. However there are some important differences:
+Following the definition above, a web map is a type of digital map since it is derived from a computer. However there are some important differences:
 - **Web maps have dynamic scales and content**. For instance when you zoom in, more information may appear that wasn't apparent before. For this reason, web maps are not designed for print.
 - **Interactive**. Web maps are built to be interacted with - usually by an end user.
 - **Often relies on web and mobile technology**.    
-We see web maps all the time in the web, and usually we think of [Google Maps](https://www.google.ca/maps) as a familiar example. For small businesses, web maps are helpful for [finding directions](https://luppolobrewing.ca/contact/). For app builders, web maps might provide a [method for routing to locations](https://www.pogomap.info/) using a mobile device's geolocation features. For researchers, they may help [communicate important information](https://www.uvic.ca/research/centres/cisur/projects/map/index.php) in an area of study. For journalists, they may help [provide perspective on a story in the news](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html#4.04/39.97/-84.35).
+Web maps are ubiquitous - we see and use them all the time. For example, [Google Maps](https://www.google.ca/maps). For small businesses, web maps are helpful for [finding directions](https://luppolobrewing.ca/contact/). For app builders, web maps might provide a [method for routing to locations](https://www.pogomap.info/) using a mobile device's geolocation features. For researchers, they may help [communicate important information](https://www.uvic.ca/research/centres/cisur/projects/map/index.php) in an area of study. For journalists, they may help [provide perspective on a story in the news](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html#4.04/39.97/-84.35).
 
-In any case, web maps are a canvas for visualizing and interacting with geographic data.
+Web maps are a canvas for visualizing and interacting with geographic data.
