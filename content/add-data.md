@@ -17,7 +17,7 @@ Add a Leaflet marker by copy/pasting the text below into the <code>body</code> o
 
 
 ```js
-var ubccampus = L.marker([49.260605, -123.245995]).addTo(mymap).bindPopup("Hi Mom!");
+var ubccampus = L.marker([49.260605, -123.245995]).addTo(mymap).bindPopup("Hello World!");
 ```    
 You should see something like this (click on the marker too!):    
 
