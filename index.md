@@ -36,8 +36,11 @@ Click on the 'Download Data' button below to start the download. Once complete, 
 [Download Data](content/intro-leaflet-data.zip){: .btn .btn-blue }
 
 
-All set? Let's begin web mapping!
-––––––––
+### What you will build
+<iframe src="./content/final_map.html" style="width:60%; height:600px; border:none; margin-left:20%"> </iframe>
+
+All set? Let's begin web mapping!    
+
 
 #### Geospatial Information Resources at UBC:
 - General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)    
@@ -45,7 +48,3 @@ All set? Let's begin web mapping!
 - UBC's GIS email list: [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)  
 - UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)
 - Evan Thornberry, GIS Librarian @ UBC Library: evan.thornberry AT ubc.ca
-
-### What you will build
-<iframe src="./content/final_map.html" style="width:60%; height:600px; border:none; margin-left:20%"> </iframe>
-
