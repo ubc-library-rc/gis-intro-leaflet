@@ -37,7 +37,7 @@ Click on the 'Download Data' button below to start the download. Once complete, 
 
 
 ### What you will build
-<iframe src="./content/final_map.html" style="width:100%; height:500px; border:none; margin-left:20%"> </iframe>
+<iframe src="./content/final_map.html" style="width:100%; height:500px; border:none;"> </iframe>
 
 All set? Let's begin web mapping!    
 
