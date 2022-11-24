@@ -16,7 +16,7 @@ This beginner-level workshop is intended for anyone interested in getting starte
 
 ### Software used     
 - **Internet browser (and an internet connection)**. The most recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers.
-- **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop uses [Atom](https://atom.io/) for screenshots, but other editors like [Notepad++](https://notepad-plus-plus.org/), [Sublime Text](https://www.sublimetext.com/3), or [Visual Studio Code](https://code.visualstudio.com/download) will work similarly.
+- **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). In this workshop we'll use [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
 
 ### Prerequisites
@@ -37,7 +37,7 @@ Click on the 'Download Data' button below to start the download. Once complete, 
 
 
 ### What you will build
-<iframe src="./content/final_map.html" style="width:60%; height:600px; border:none; margin-left:20%"> </iframe>
+<iframe src="./content/final_map.html" style="width:100%; height:500px; border:none; margin-left:20%"> </iframe>
 
 All set? Let's begin web mapping!    
 
