@@ -18,8 +18,12 @@ Below is a block of code - this is our map boilerplate. This was included in the
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Source for your Leaflet JavaScript and CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
     <script src="./ubcbuildings.js" charset="utf-8"></script>
   </head>
 
@@ -44,7 +48,6 @@ Below is a block of code - this is our map boilerplate. This was included in the
 
       //Paste your marker here
 
-      //Paste UBC buildings variable here
       //Paste the L.geoJSON function here
 
       //Paste popup function here
