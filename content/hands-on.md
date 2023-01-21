@@ -11,7 +11,7 @@ Before we start working on our map, let’s put things into perspective: This is
 
 ## Set-up
 If you haven't already, download the workshop data now and **extract the contents of the .zip file**.
-[Download Data](content/intro-leaflet-data.zip){: .btn .btn-blue }
+[Download Data](./intro-leaflet-data.zip){: .btn .btn-blue }
 
 In addition, we'll use two pieces of software: a web browser, which will render/display your map, and a source code editor to edit that map.
 
