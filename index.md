@@ -42,10 +42,11 @@ Making maps is hard. And, without practice, working in the web is hard too. Whil
 All set? Let's begin web mapping!    
 
 
-#### Geospatial Information Resources at UBC:
-- General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)    
+#### GIS Resources at UBC:
+
+- General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)
 - UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
+- UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)
 - Archive of all [Research Commons workshops](https://ubc-library-rc.github.io/all.html)
-<!--- - UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)--->
-- Evan Thornberry, GIS Librarian: ```evan.thornberry AT ubc.ca```
+- Contact UBC Library’s Geospatial team: `library.gis@ubc.ca`
 - Schedule a 1:1 consult with the geospatial team [here](https://libcal.library.ubc.ca/appointments/research_commons#s-lc-public-pt)
