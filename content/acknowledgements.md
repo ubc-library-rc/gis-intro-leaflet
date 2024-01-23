@@ -5,7 +5,7 @@ nav_order: 5
 ---
 ## Acknowledgements
 
-This content of this workshop was authored by Evan Thornberry.
+This content of this workshop was authored by Evan Thornberry and Lily Demet.
 
 ### Site Template
 Site template adapted from the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill) and available under the [MIT License](http://opensource.org/licenses/MIT).

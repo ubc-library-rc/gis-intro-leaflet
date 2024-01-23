@@ -46,4 +46,4 @@ All set? Let's begin!
 
 
 <p style="margin-top:90px"></p>
-<p style="color:grey; font-size:11px">This workshop was developed by Evan Thornberry.</p>
+<p style="color:grey; font-size:11px">This workshop was developed by Evan Thornberry and Lily Demet.</p>
