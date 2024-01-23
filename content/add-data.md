@@ -21,7 +21,7 @@ var ubccampus = L.marker([49.260605, -123.245995]).addTo(mymap).bindPopup("Hello
 ```    
 You should see something like this (click on the marker too!):    
 
-![Map loads over the center of UBC with a marker!](map04.png "Map loads over the center of UBC with a marker!")
+![Map loads over the center of UBC with a marker!](map05.png "Map loads over the center of UBC with a marker!")
 
 
 ## Add a GeoJSON
@@ -52,4 +52,4 @@ L.geoJSON(ubcbuildings).addTo(mymap);
 You should see something like this after you save and reload your browser:    
 
 
-![Map loads over the center of UBC with a marker, and a data layer!](map05.png "Map loads over the center of UBC with a marker, and a data layer!")
+![Map loads over the center of UBC with a marker, and a data layer!](map04.png "Map loads over the center of UBC with a marker, and a data layer!")
