@@ -1,30 +1,46 @@
 <html>
-  <head>
 
-    <title>Leaflet Example</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
-    <!-- Source for your Leaflet JavaScript and CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-  </head>
+  <title>Leaflet Example</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <div id="mapid" style="height: 100%;"></div>
+  <!-- Source for your Leaflet JavaScript and CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
 
-    <script>
 
-      var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
+</head>
 
-      var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
-      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+<body>
+  <!-- Your map's HTML container -->
+  <div id="mapid" style="height: 100%;"></div>
+
+  <!-- Script for your map between <script> and </script> -->
+  <script>
+
+    // Initialize your map, sets the initial view location and zoom level
+    var mymap = L.map('mapid').setView([49.260605, -123.245995], 14);
+
+    //Load the tile layer, paste in new tile layer of choice.
+    var OpenStreetMap_BZH = L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+      attribution: 'Map Tiles By <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://www.openstreetmap.bzh/" target="_blank">Breton OpenStreetMap Team</a>',
       subdomains: 'abcd',
       minZoom: 0,
-      maxZoom: 18,
-      ext: 'png'
-        }).addTo(mymap);
+      maxZoom: 20,
+      ext: 'png',
+      scrollWheelZoom: false,
+    }).addTo(mymap);
 
-    </script>
-  </body>
+    
+
+  </script>
+</body>
+
 </html>
