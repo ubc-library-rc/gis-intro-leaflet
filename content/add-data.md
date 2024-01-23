@@ -6,7 +6,7 @@ nav_order: 3
 ---
 
 # Add Some Data
-Let's add some map features!!
+Let's add some map features!
 
 ## Add a Leaflet Marker
 Leaflet gives us an easy way to add basic map features called **markers**, which represent point locations on the ground. More information about adding basic features to Leaflet can be found in the [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/). Let's add a marker over UBC campus.    
