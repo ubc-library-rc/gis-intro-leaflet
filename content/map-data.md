@@ -33,5 +33,5 @@ To Do
 {: .label .label-green }
 1. Delete existing geoJSON text on the </>JSON panel of [geojson.io](http://geojson.io).
 2. Copy the GeoJSON text above and replace what you just deleted on geojson.io.
-3. Click the edit layer button (above the trash can) to move the marker to a different position, then save.
-4. In the Table panel, edit the GeoJSON file's attributes, by changing the name of the location.
+3. Click the edit layer button to view the feature properties.
+4. You can add or edit the feature's properties there, or directly edit the GeoJSON file's attributes in the Table panel. 
