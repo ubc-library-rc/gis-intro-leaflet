@@ -6,12 +6,18 @@ nav_order: 2
 ---
 # Open Data in Code Editor
 
-First open the Visual Studio Code (VS Code) application. Make sure your data folder is unzipped. To open `intro-leaflet-data` with VS Code, select Open... from the Welcome Page and navigate to your data folder is stored on your computer. Select it (but don't click into it) and hit Open. 
+*1*{: .circle .circle-blue} First open the Visual Studio Code (VS Code) application. Make sure your data folder is unzipped. To open `intro-leaflet-data` with VS Code, select Open... from the Welcome Page and navigate to your data folder is stored on your computer. Select it (but don't click into it) and hit Open. 
 
 ![opening folder in vs code](./vscode-open-folder_20240212.png)
 
 <br>
 
-Once opened, you should see two files in the Explorer panel of your code editor. `ubcbuildings.js` is the data file, and the `boilerplate.html` is the map boilerplate.
+*2*{: .circle .circle-blue} Once opened, you should see two files in the Explorer panel of your code editor. `ubcbuildings.js` is the data file, and the `boilerplate.html` is the map boilerplate. Double click `boilerplate.html ` in the Explorer panel to open it.
     
 ![folder open](./vscode-folder-open_20240418.png)
+
+
+*3*{: .circle .circle-blue}
+If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. This alleviates the need to constantly refresh your browser each time you make a change.
+
+Because we will be working back and forth between the browser page the code editor, it’s helpful to arrange your computer screen(s) in a way where you can either see both windows at once or are able to toggle between the two. This way, every time you modify the html code you can see the changes in your browser. You’ll also want to have workshop website accessible.
