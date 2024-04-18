@@ -9,7 +9,7 @@ nav_order: 1
 <img src="leaflet_logo.png" alt="Leaflet Logo" style="margin: auto;" />
 
 
-This beginner-level workshop is intended for anyone interested in getting started creating web maps. There are two main sections: an introduction to web maps, and a hands-on where we will copy/paste code to make an interactive map of UBC-V Campus powered by [Leaflet](https://leafletjs.com/). This workshop aims to develop the fundamental knowledge and skills to begin web mapping while providing opportunities to ask questions. Upon completion of this workshop you will have a [boilerplate code](https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/) which you can build upon and tinker with on your own. 
+This beginner-level workshop is intended for anyone interested in getting started creating web maps. This workshop aims to develop the fundamental knowledge and skills to begin web mapping while providing opportunities to ask questions. There are two main sections: an introduction to web maps, and a hands-on where we will copy/paste code to make an interactive map of UBC-V Campus powered by [Leaflet](https://leafletjs.com/). Upon completion of this workshop you will have a [boilerplate code](https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/) which you can build upon and tinker with on your own. 
 
 
 ## What you will build
