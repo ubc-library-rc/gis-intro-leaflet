@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Add Data
+title: 6. Add Data
 parent: Hands On
-nav_order: 3
+nav_order: 6
 ---
 
 # Add Some Data

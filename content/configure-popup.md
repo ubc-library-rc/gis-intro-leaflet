@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Configure a Popup
+title: 7. Configure Popups
 parent: Hands On
-nav_order: 5
+nav_order: 7
 ---
 
-# Configure a Popup
+# Configure Popups
 
 The building layer that we added to our map contains attribute values for each of the building features on our map, such as their name, construction date, and the number of floors. If we click on our own map we aren't yet able to see these values because we haven't yet configured our map to load popups for this layer. To do this we'll need to add a ***function***. A function in programming is a block of code that does some specific task, like a mini program. The function below called <code>onEachFeature</code> adds a popup to our map if the layer is clicked, and adds the feature's name. We know from looking at the [UBCGeodata repository](https://github.com/UBCGeodata/ubcv-buildings/blob/master/geojson/ubcv_building_records.geojson) that the value for the building's name is contained in the attribute titled <code>NAME</code>.   
     

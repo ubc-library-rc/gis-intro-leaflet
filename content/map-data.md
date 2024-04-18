@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Data
-parent: Basic Components
-nav_order: 3
+title: 5. Map Data
+parent: Hands On
+nav_order: 5
 ---
 
 # Map Data
