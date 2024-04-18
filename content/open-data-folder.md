@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Open Data Folder
+title: 2. Open Data Folder
 parent: Hands On
-nav_order: 1
+nav_order: 2
 ---
 # Open Data in Code Editor
 
