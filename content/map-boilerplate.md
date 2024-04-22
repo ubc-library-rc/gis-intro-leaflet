@@ -6,11 +6,11 @@ nav_order: 3
 ---
 
 # Map Boilerplate
-A boilerplate is a chunk of code that can be used as-is in multiple contexts and often provides the basis for more advanced operations. The boilerplate code for this workshop renders a basemap which we will tinker with and add to in order to build an dynamic cluster map. It’s important that you don’t lose any of this code unless directed, and that it remains in its original structure and arrangement.
+A [boilerplate](https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/) is a chunk of code that can be used as-is in multiple contexts and often provides the basis for more advanced operations. The boilerplate code for this workshop renders a basemap which we will tinker with and add to in order to build an dynamic cluster map. It’s important that you don’t lose any of this code, and that it remains in its original structure and arrangement. Beyond this workshop, before you experiment with it on your own it's a good idea to make a copy of the original code to refer back to.
 
 
 ## Boilerplate Code
-Now that we've seen what the boilerplate basemap for this workshop looks like, let’s explore the code behind it. Return to VS Code and double click `boilerplate.html ` in the Explorer panel to open it. The contents of your boilerplate should look like this: 
+Now that we've seen what the boilerplate basemap for this workshop looks like, let’s explore the code behind it. Return to VS Code (your code editer). Double click `boilerplate.html ` in the Explorer panel to open it. The contents of your boilerplate should look like this: 
 
 
 ```html
@@ -63,7 +63,6 @@ Now that we've seen what the boilerplate basemap for this workshop looks like, l
 
 ```
 
-If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. This alleviates the need to constantly refresh your browser each time you make a change.
 
 
 ## Anatomy of an HTML document 
@@ -93,12 +92,20 @@ The HTML document is split into two main sections: the <code>head</code> and the
     </div>
 
     <script>
-      //Included in the body is a block of JavaScript that loads the map on the screen.
-      //Continue to the next section for a better understanding of this script...
+      Included in the body is a block of JavaScript that loads the map on the screen.
+      Continue to the next section for a better understanding of this script...
     </script>
   </body>
 </html>
 ```
 
 
+---
+
+## Some Notes
+
+- **Version Releases** In the <head> element of your map's HTML document you will see links to Leaflet's CSS and Javascript responsible for the styling and interactivity of your boilerplate basemap. Notice both links include `leaflet@1.9.4`. This refers to the Leaflet version. Just as your computer occasionally requires software updates, Leaflet occasionally releases updates. If your web maps ever stop working for no apparent reason, go to Leaflet's home page, [leafletjs.com](https://leafletjs.com/) and check if a new version has been released. If it has, simply update your CSS and Javascript links to match. 
+    
+
+- **Linking Data Sources** Beneath the Leaflet CSS and Javascript is the line `<script src="./ubcbuildings.js" charset="utf-8"></script>`. This is a link to the map data, wrapped as a javascript variable. While this will be explained further in the following pages, it is important to note two things. First, always link your map data in the head of your map's HTML document. Second, the `./` preceding the filename denotes a relative path. A [relative path](https://www.w3schools.com/html/html_filepaths.asp) is a path to a file that is in the same folder as your HTML document. If your data were stored in downloads, for instance, the source link would look like `src="./downloads/ubcbuildings.js"`. If your data were stored on a server or hosted by an external web source, as are the CSS and Javascript, the source link would direct the web browser reading and rendering your map's HTML document to that address. 
 
