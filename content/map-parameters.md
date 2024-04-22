@@ -55,7 +55,7 @@ Say we want to load the map over UBC, which is about 5 km to the west. We'd need
 
 To Do
 {: .label .label-green }
-Modify the coordinate pair so your map loads over UBC. If Live Server is enabled, you should immediately see the results of this change. Otherwise,save your .html file, and reload your browser. If everything went as planned, you should see this:
+Modify the coordinate pair so your map loads over UBC. If Live Server is enabled, you should immediately see the results of this change. Otherwise, save your HTML file, and reload your browser. If everything went as planned, you should see this:
 
 
 ![Map loads over the center of UBC](map02.png "Your second map loads over UBC")
