@@ -20,4 +20,6 @@ nav_order: 2
 *3*{: .circle .circle-blue}
 If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. This alleviates the need to constantly refresh your browser each time you make a change.
 
+![go live](./go-live.png)
+
 Because we will be working back and forth between the browser page the code editor, it’s helpful to arrange your computer screen(s) in a way where you can either see both windows at once or are able to toggle between the two. This way, every time you modify the html code you can see the changes in your browser. You’ll also want to have workshop website accessible.
