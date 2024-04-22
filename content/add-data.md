@@ -5,7 +5,7 @@ parent: Hands On
 nav_order: 6
 ---
 
-# Add Some Data
+# Add Data
 Let's add some map features!
 
 ## Add a Leaflet Marker
