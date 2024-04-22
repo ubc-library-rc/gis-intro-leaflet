@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 1. Leaflet Basemap
+title: 1. Map Tiles
 parent: Hands On
 nav_order: 1
 ---
 
-# Leaflet Basemap
-Let’s first see what the basic Leaflet web map looks like. From your computer's finder, locate the file `boilerplate.html` and open it with your web browser of choice (e.g., Google Chrome). To do this, you can likely just double click the file. If that fails, control-clock the file and choose your web browser as the application to open it with. In your web browser, you should see a map that looks something like this:
+# Leaflet Basemap & Map Tiles
+Let’s first see what the basic Leaflet web map looks like. From your computer's finder, locate the file `boilerplate.html` and open it with your web browser of choice (e.g., Google Chrome). To do this, you can likely just double click the file. If that fails, control-click (i.e. right-click) the file and choose your web browser as the application to 'open with'. In your web browser, you should see a map that looks like this:
 
 ![first-view](./first-view.png)
 
@@ -14,7 +14,7 @@ Keep this browser tab open - we’ll return to it in the next section.
 
 
 ## Map Tiles
-Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. Each tile is 256px by 256px (traditionally a .png image at roughly 20-40kb each), making them quick to load over an internet connection. These tiles provide a geographic reference for other data layers that you might add later (we'll get to that in a minute). You've probably noticed them if you've had choppy internet connection and had to wait for data to load:
+**Map tiles** are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. Each tile is 256px by 256px (traditionally a .png image at roughly 20-40kb each), making them quick to load over an internet connection. These tiles provide a geographic reference for other data layers that you might add later (we'll get to that in a minute). You've probably noticed them if you've had choppy internet connection and had to wait for data to load:
 
 ![tiles](tiles.gif)
 
