@@ -25,4 +25,5 @@ L.geoJSON(ubcbuildings, {onEachFeature}).addTo(mymap);
 
 If all went as planned you should see this in your browser:    
 
-![Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!](map07.png "Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!")
+![Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!](map07.png)
+ 
