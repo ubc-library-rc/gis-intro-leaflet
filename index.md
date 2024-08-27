@@ -22,8 +22,8 @@ All of the data for this workshop is free and openly available. However, to get 
 [Download Data](content/intro-leaflet-data.zip){: .btn .btn-blue }
 
 ### Software Used 
-- **Internet browser (and an internet connection)**. The most recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers.
-- **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). In this workshop we'll use [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
+- **Internet browser (and an internet connection)**. The most recent version of [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org) are recommended. 
+- **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop will use [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
 Making maps is hard. And, without practice, working in the web is hard too. While there are no prerequisites for this workshop, familiarity with cartographic principles and a basic understanding of what code is and does will make diving into web mapping easier. Refer to these resources at any time:
 
