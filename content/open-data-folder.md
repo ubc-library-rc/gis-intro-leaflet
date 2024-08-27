@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Open Data in Code Editor
 
-*1*{: .circle .circle-blue} First open the Visual Studio Code (VS Code) application. Make sure your data folder is unzipped. To open `intro-leaflet-data` with VS Code, select Open... from the Welcome Page and navigate to your data folder is stored on your computer. Select it (but don't click into it) and hit Open. 
+*1*{: .circle .circle-blue} First open the Visual Studio Code (VS Code) application. To open `intro-leaflet-data` with VS Code, select Open... from the Welcome Page and navigate to your data folder is stored on your computer. Select it (but don't click into it) and hit Open. If you are having any trouble, ensure your data folder is unzipped.
 
 ![opening folder in vs code](./vscode-open-folder_20240212.png)
 
@@ -16,9 +16,10 @@ nav_order: 2
     
 ![folder open](./vscode-folder-open_20240418.png)
 
-
+    
+<br>    
 *3*{: .circle .circle-blue}
-If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. This alleviates the need to constantly refresh your browser each time you make a change.
+If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. Note: Depending on your computer’s operating system, you may need to hit Ctrl + S to save your document edits before Live Server will update to reflect your changes. Live Server alleviates the need to constantly refresh your browser each time you make a change.
 
 ![go live](./go-live.png)
 
