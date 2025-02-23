@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Next Steps
+title: Practice
 nav_order: 4
 ---
 # Practice
