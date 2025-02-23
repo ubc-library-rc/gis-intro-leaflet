@@ -34,6 +34,7 @@ Making maps is hard. And, without practice, working in the web is hard too. Whil
 
 
 <br>
+----
 #### GIS Resources at UBC:
 
 - General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)
