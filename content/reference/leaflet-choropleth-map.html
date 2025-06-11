@@ -1,0 +1,203 @@
+<html>
+
+<head>
+
+    <title>Leaflet Choropleth Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Source for your Leaflet JavaScript and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="./neighborhood-chestnut-trees.js" charset="utf-8"></script>
+
+    <!--style for info box-->
+    <style>
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+
+        }
+
+        .info h4 {
+            margin: 0 0 5px;
+            color: #ca4e2f;
+        }
+
+        .info p {
+            margin: 0 0 5px;
+            color: #483b38;
+        }
+    </style>
+
+    <!--style for legend-->
+    <style>
+        .legend {
+            line-height: 18px;
+            color: #555;
+        }
+
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your map's HTML container -->
+    <div id="mapid" style="height: 100%;"></div>
+
+    <!-- Script for your map between <script> and </script> -->
+    <script>
+
+        // Initialize your map, sets the initial view location and zoom level
+        var mymap = L.map('mapid').setView([49.2482353821105, -123.11672680598382], 11);
+
+        //Load the tile layer, paste in new tile layer of choice.
+        var Thunderforest_Neighbourhood = L.tileLayer('https://{s}.tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=81fa11e1d1ae4749928e96b9f0c39521', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	apikey: 'bd996011-a75f-4c64-a90a-1266ae582a21',
+	maxZoom: 22
+}).addTo(mymap);
+
+// var Stadia_StamenWatercolor = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.{ext}', {
+// 	minZoom: 1,
+// 	maxZoom: 16,
+//     apikey: 'bd996011-a75f-4c64-a90a-1266ae582a21',
+// 	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+// 	ext: 'jpg'
+// }).addTo(mymap);
+
+
+
+        L.geoJson(neighborhoodchestnuts).addTo(mymap);
+
+
+        function getColor(c) {
+            return c > 281 ? '#7f2704' :
+                c > 160 ? '#df5005' :
+                    c > 98 ? '#fd9243' :
+                        c > 21 ? '#fdd2a5' :
+                            '#fff5eb';
+
+
+
+        }
+        function style(feature) {
+            return {
+                fillColor: getColor(feature.properties.chestnuts),
+                weight: 1,
+                opacity: 1,
+                color: 'white',
+                dashArray: '0',
+                fillOpacity: 0.5
+            };
+        }
+
+        L.geoJson(neighborhoodchestnuts, { style: style }).addTo(mymap);
+
+        var geojson;
+        // ... our listeners
+
+        function highlightFeature(e) {
+            var layer = e.target;
+
+            layer.setStyle({
+                weight: 5,
+
+            });
+
+            layer.bringToFront();
+            info.update(layer.feature.properties);
+        }
+
+        function resetHighlight(e) {
+            geojson.resetStyle(e.target);
+            info.update();
+        }
+
+        function zoomToFeature(e) {
+            map.fitBounds(e.target.getBounds());
+        }
+
+        function onEachFeature(feature, layer) {
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: zoomToFeature
+            });
+        }
+
+        geojson = L.geoJson(neighborhoodchestnuts, {
+            style: style,
+            onEachFeature: onEachFeature
+        }).addTo(mymap);
+
+
+
+        //make sure to add style otherwise mouse away will change map
+        geojson = L.geoJson(neighborhoodchestnuts, { style: style });
+
+
+
+        //custom info control
+
+        var info = L.control();
+
+        info.onAdd = function (mymap) {
+            this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+            this.update();
+            return this._div;
+        };
+
+        // method that we will use to update the control based on feature properties passed
+        info.update = function (props) {
+            this._div.innerHTML = '<h4>Number of chestnut street trees in each Vancouver neighborhood</h4><br>' + (props ?
+                '<p><b>Neighborhood:</b> ' + props.name + '<br><b>Total:</b> ' + props.chestnuts + '<br>'
+                : 'Hover over a neighborhood');
+        };
+
+        info.addTo(mymap);
+
+
+        //legend
+        var legend = L.control({ position: 'bottomright' });
+
+        legend.onAdd = function (mymap) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = [6, 21, 98, 160, 281],
+                labels = [];
+
+            //upper limit is 389 but couldnt figure out how to remove added legend item 389+ if added to grade... 
+
+
+            // loop through our density intervals and generate a label with a colored square for each interval
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                    grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+            }
+
+            return div;
+        };
+
+        legend.addTo(mymap);
+
+
+    </script>
+</body>
+
+</html>

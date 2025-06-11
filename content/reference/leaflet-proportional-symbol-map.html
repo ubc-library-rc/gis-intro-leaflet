@@ -1,0 +1,85 @@
+<html>
+
+</html>
+
+<head>
+
+    <title>Proportional Symbol Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Source for your Leaflet JavaScript and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="./island-municipalities-centroids.js" charset="utf-8"></script>
+
+    <!--made following help from  https://github.com/mup223/proportionalSymbol-->
+</head>
+
+<body>
+    <!-- Your map's HTML container -->
+    <div id="mapid" style="height: 100%;"></div>
+
+    <!-- Script for your map between <script> and </script> -->
+    <script>
+
+        // Initialize your map, sets the initial view location and zoom level
+        var mymap = L.map('mapid').setView([49.60664986074267, -125.62928117878062], 7);
+
+        //Load the tile layer, paste in new tile layer of choice.
+        var Jawg_Light = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV', {
+            attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            minZoom: 0,
+            maxZoom: 22,
+            accessToken: 'bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV'
+        }).addTo(mymap);
+
+        mun_cent.features.sort(function (a, b) {
+            return b.properties.POP_2022 - a.properties.POP_2022;
+        });
+
+
+        L.geoJson(mun_cent, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, {
+                    color: 'orange',
+                    opacity: .7,
+                    weight: 1,
+                    fillColor: 'yellow',
+                    fillOpacity: .5,
+                    radius: getRadius(feature.properties.POP_2022 / 10)
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                layer.on('mouseover', function () {
+                    layer.setStyle({
+                        fillColor: 'orange',
+                        fillOpacity: .5,
+                    });
+                });
+                layer.on('mouseout', function () {
+                    layer.setStyle({
+                        fillColor: 'yellow'
+                    });
+                    layer.bindTooltip('<b>' + layer.feature.properties.AA_NAME + '</b>' + '<br>Population (2022): ' + layer.feature.properties.POP_2022);
+                });
+            }
+
+        }).addTo(mymap);
+
+
+
+        function getRadius(area) {
+            var radius = Math.sqrt(area / Math.PI);
+            return radius * .6;
+        }
+
+
+    </script>
+</body>
+
+</html>

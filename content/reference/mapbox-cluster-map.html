@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapbox Cluster Map</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+<!--style for title-->
+    <style type="text/css">
+        #info {
+            display: float;
+            position: top;
+            margin: 0px auto;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            text-align: center;
+            color: #222;
+            background: #ddf1e6;
+        }
+    </style>
+
+<div id='map' style='height: 350px;'></div>
+<pre id="info"></pre>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsazcyZ25zdjAzemwzcm1ydnNybmkwb2EifQ.ggoNMtZ32x8wK-tGYFOCDg';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-123.12421722356761,49.24686429166432], 
+        zoom: 10.5,     
+    
+        });
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // disable map zoom when using scroll
+        map.scrollZoom.disable();
+
+        map.on('load', () => {
+
+            map.addSource('parks', {
+                type: 'geojson',
+                data: './parks-point.geojson',
+                cluster: true,
+                clusterMaxZoom: 14,
+                clusterRadius: 50
+            });
+
+            //add circle symbols for clusters
+            //step function
+            map.addLayer({
+                'id': 'park-markers',
+                'type': 'circle',
+                'source': 'parks',
+                'filter': ['has', 'point_count'],
+                'paint': {
+                    'circle-color': '#008000',
+                    'circle-radius': [
+                        'step',
+                        ['get', 'point_count'],
+                        12, //pt size for cluster of 3 or fewer
+                        3,
+                        15, //pt size for cluster between 3 and 5
+                        5,
+                        20, //pt size for cluster between 5 and 10
+                        10,
+                        25,
+                        20,
+                        25,
+                        30,
+                        35,
+                        50,
+                        40,
+                        100,
+                        45,
+                        216,
+                        50
+                    ]
+                }
+            });
+
+
+            //add point count to cluster symbol 
+            map.addLayer({
+                id: 'cluster-count',
+                type: 'symbol',
+                source: 'parks',
+                filter: ['has', 'point_count'],
+                layout: {
+                    'text-field': ['get', 'point_count_abbreviated'],
+                    'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+                    'text-size': 12
+                },
+                paint: {
+                    'text-color': '#ffffff'
+                }
+            });
+
+            //display individual parks once zoomed in
+           map.addLayer({
+                id: 'unclustered-point',
+                type: 'circle',
+                source: 'parks',
+                minzoom: 13.7,
+                paint: {
+                    'circle-color': '#008000',
+                    'circle-radius': 6,
+                }
+            });
+
+            // When a click event occurs on a feature in the places layer, open a popup at the
+            // location of the feature, with description HTML from its properties.
+            map.on('click', 'unclustered-point', (e) => {
+                // Copy coordinates array.
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const name = e.features[0].properties.name;
+                const wc = e.features[0].properties.washrooms;
+
+        
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(name)
+                    .addTo(map);
+            });
+
+        });
+
+    //https://jsbin.com/geyejalemu/1/edit?html,output
+    document.getElementById('info').innerHTML = "Number of Parks in Vancouver"
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+  <title>Leaflet Reference Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Source for your Leaflet JavaScript and CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+
+  <script src="./parks-polygon.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <!-- Your map's HTML container -->
+  <div id="mapid" style="height: 100%;"></div>
+
+  <!-- Script for your map between <script> and </script> -->
+  <script>
+
+    // Initialize your map, sets the initial view location and zoom level
+    var mymap = L.map('mapid').setView([49.2482353821105, -123.11672680598382], 12);
+
+    //Load the tile layer, paste in new tile layer of choice.
+    var OpenStreetMap_BZH = L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+      attribution: 'Map Tiles By <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://www.openstreetmap.bzh/" target="_blank">Breton OpenStreetMap Team</a>',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 20,
+      ext: 'png',
+      scrollWheelZoom: false,
+    }).addTo(mymap);
+
+    //Paste your marker here
+    var jrpark = L.marker([49.26421732514856, -123.1072864102972]).addTo(mymap).bindPopup("Great Swings!!");
+
+
+    //Paste the L.geoJSON function here
+    L.geoJSON(parkspoly, {onEachFeature}).addTo(mymap);
+
+    //Paste popup function here
+    function onEachFeature(feature, layer) {if (feature.properties && feature.properties.park_name) {layer.bindPopup(feature.properties.park_name);}}
+
+  </script>
+</body>
+
+</html>

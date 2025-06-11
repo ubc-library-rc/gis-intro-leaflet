@@ -1,0 +1,272 @@
+<html>
+
+</html>
+
+<head>
+
+    <title>Leaflet Cluster Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Source for your Leaflet JavaScript and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!--marker cluster libraries-->
+    <link rel="stylesheet" href="./Leaflet.markercluster-1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="./Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css" />
+
+    <script src="./Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>
+
+    <!--styling for info box-->
+    <!-- modified from https://jsfiddle.net/TomazicM/rqu3nvLj/ -->
+    <style>
+        /* html, body {
+    	height: 100%;
+    	padding: 0;
+    	margin: 0;
+    	background-color: rgba(255, 255, 255, 0.676);
+    } */
+
+        .titleStyle1 {
+            color: #0e612f;
+            font-weight: bold;
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+
+        .contentStyle1 {
+            color: #0e612f;
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+
+
+    </style>
+
+
+    <!--data source layer-->
+    <script src="./parks-point.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- Your map's HTML container -->
+    <div id="mapid" style="height: 100%;"></div>
+
+    <div style="float: right; margin-top:8pt;">
+
+        <!-- Script for your map between <script> and </script> -->
+        <script>
+
+            // Initialize your map, sets the initial view location and zoom level
+            var mymap = L.map('mapid').setView([49.2482353821105, -123.11672680598382], 11);
+
+            //Load the tile layer, paste in new tile layer of choice.
+            var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+            }).addTo(mymap);
+
+            //add cluster group 
+            var markers = L.markerClusterGroup();
+
+            L.geoJSON(parkspoint, {
+                onEachFeature: function (feature, layer) {
+                    var popupContent =
+                        "<b>Name: </b>" +
+                        feature.properties.name +
+                        "<br><b>Neighbourhood: </b>" +
+                        feature.properties.neighbourhoodname
+                        ;
+
+                    layer.bindPopup(popupContent);
+                },
+            }).addTo(markers);
+            markers.addTo(mymap);
+
+
+
+
+        </script>
+
+
+        <!--for info box-->
+        <!--adapted from https://jsfiddle.net/TomazicM/rqu3nvLj/-->
+        <script>
+            L.Control.Info = L.Control.extend({
+
+                options: {
+                    title: 'Info',
+                    titleTooltip: 'Click here for more info',
+                    content: '',
+                    maxWidth: '250px',
+                    titleClass: '',
+                    contentClass: ''
+                },
+
+                initialize: function (options) {
+                    L.Util.setOptions(this, options);
+                    this._infoContainer = null;
+                    this._infoTitleContainer = null;
+                    this._infoBodyContainer = null;
+                    this._infoCloseButtonContainer = null;
+                    this._infoContentContainer = null;
+                    this._infoTitle = this.options.title;
+                    this._infoTitleTooltip = this.options.titleTooltip;
+                    this._infoContent = this.options.content;
+                    this._titleShown = false;
+                    this._titleClass = this.options.titleClass;
+                    this._contentClass = this.options.contentClass;
+                    this._infoTitleStyle = 'padding: 5px;';
+                    this._infoContainerClasses = 'leaflet-control-layers leaflet-control';
+                },
+
+                onAdd: function (map) {
+                    var infoContainer = L.DomUtil.create('div', 'leaflet-control-layers');
+
+                    var infoTitle = L.DomUtil.create('div');
+                    infoContainer.appendChild(infoTitle);
+                    infoTitle.setAttribute('style', this._infoTitleStyle);
+
+                    var infoBody = L.DomUtil.create('div', 'leaflet-popup-content-wraper');
+                    infoContainer.appendChild(infoBody);
+                    infoBody.setAttribute('style', 'max-width:' + this.options.maxWidth);
+
+                    var infoContent = L.DomUtil.create('div', 'leaflet-popup-content');
+                    infoBody.appendChild(infoContent);
+
+                    var infoCloseButton = L.DomUtil.create('a', 'leaflet-popup-close-button');
+                    infoContainer.appendChild(infoCloseButton);
+                    infoCloseButton.innerHTML = 'x';
+                    infoCloseButton.setAttribute('style', 'cursor: pointer');
+
+                    this._infoContainer = infoContainer;
+                    this._infoTitleContainer = infoTitle;
+                    this._infoBodyContainer = infoBody;
+                    this._infoContentContainer = infoContent;
+                    this._infoCloseButtonContainer = infoCloseButton;
+
+                    infoTitle.innerHTML = this._infoTitle;
+                    infoContent.innerHTML = this._infoContent;
+                    this._showTitle();
+
+                    L.DomEvent.disableClickPropagation(infoContainer);
+                    L.DomEvent.on(infoCloseButton, 'click', L.DomEvent.stop);
+                    L.DomEvent.on(infoContainer, 'click', this._showContent, this);
+                    L.DomEvent.on(infoCloseButton, 'click', this._showTitle, this);
+
+                    return infoContainer;
+                },
+
+                onRemove: function (map) { },
+
+                setTitle: function (title) {
+                    this._infoTitle = title;
+                    if (this._infoTitleContainer != null) {
+                        this._infoTitleContainer.innerHTML = title;
+                    }
+                },
+
+                setTitleTooltip: function (titleTooltip) {
+                    this._infoTitleTooltip = titleTooltip;
+                    if (this._titleShown) {
+                        this._showTitleTooltip(true);
+                    }
+                },
+
+                setContent: function (content) {
+                    this._infoContent = content;
+                    if (this._infoContentContainer != null) {
+                        this._infoContentContainer.innerHTML = content;
+                    }
+                },
+
+                setTitleClass: function (titleClass) {
+                    this._titleClass = titleClass;
+                    if (this._titleShown) {
+                        this._addInfoClass(this._titleClass);
+                    }
+                },
+
+                setContentClass: function (contentClass) {
+                    this._contentClass = contentClass;
+                    if (!this._titleShown) {
+                        this._addInfoClass(this._contentClass);
+                    }
+                },
+
+                _showTitle: function (evt) {
+                    this._addInfoClass(this._titleClass);
+                    this._displayElement(this._infoTitleContainer, true);
+                    this._displayElement(this._infoBodyContainer, false);
+                    this._displayElement(this._infoCloseButtonContainer, false);
+                    this._showTitleTooltip(true);
+                    this._setCursorToPointer(this._infoContainer, true);
+                    this._titleShown = true;
+                },
+
+                _showContent: function (evt) {
+                    this._addInfoClass(this._contentClass);
+                    this._displayElement(this._infoTitleContainer, false);
+                    this._displayElement(this._infoBodyContainer, true);
+                    this._displayElement(this._infoCloseButtonContainer, true);
+                    this._showTitleTooltip(false);
+                    this._setCursorToPointer(this._infoContainer, false);
+                    this._titleShown = false;
+                },
+
+                _showTitleTooltip: function (showIt) {
+                    this._infoContainer.setAttribute('Title', (showIt) ? this._infoTitleTooltip : '');
+                },
+
+                _displayElement: function (element, displayIt) {
+                    element.style.display = (displayIt) ? '' : 'none';
+                },
+
+                _setCursorToPointer: function (element, setIt) {
+                    element.style.cursor = (setIt) ? 'pointer' : '';
+                },
+
+                _addInfoClass: function (classToAdd) {
+                    L.DomUtil.setClass(this._infoContainer, this._infoContainerClasses + ' ' + classToAdd);
+                }
+            });
+
+            L.control.info = function (opts) {
+                return new L.Control.Info(opts);
+            }
+
+            var title = [];
+            var tooltip = [];
+            var text = [];
+            var titleClass = [];
+            var contentClass = [];
+
+            var i = 0;
+            var j = 0;
+
+            title[0] = 'Vancouver Parks';
+            tooltip[0] = 'Vancouver Parks';
+            text[0] = '<p style="margin-bottom: 6pt;"><b>Vancouver Parks</b></p>This is a cluster map visualizing the number of parks in Vancouver. Zoom in and out to see clustering at work.'
+            titleClass[0] = 'titleStyle1';
+            contentClass[0] = 'contentStyle1';
+
+
+            myInfoControl = L.control.info({
+                position: 'topright',
+                title: title[0],
+                titleTooltip: tooltip[0],
+                titleClass: titleClass[0],
+                contentClass: contentClass[0]
+            });
+
+            myInfoControl.setContent(text[0]);
+
+            myInfoControl.addTo(mymap);
+        </script>
+
+
+</body>
+
+</html>
