@@ -2,3 +2,5 @@ _site/
 .DS_Store
 .vscode/
 content/.DS_Store
+.jekyll-cache
+content/reference/.DS_Store
