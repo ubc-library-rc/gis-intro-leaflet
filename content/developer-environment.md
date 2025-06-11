@@ -17,9 +17,9 @@ In order to write the code that builds and renders your web maps you need a few 
 
 It’s helpful to see your web-map change as you work. Live Server is an extension for Visual Studio Code that builds a local server to host HTML documents in-progress. To install, first locate the Visual Studio Code application on your computer and open it. Then, click the gear icon in the bottom left corner of VS Code and go to **extensions**. Search for **“Live Server”** and install.
 
-<img src="./vs-extensions_20220117.jpg" alt="vs-extensions" width="400"/>
+<img src="./images/vs-extensions_20220117.jpg" alt="vs-extensions" width="40%"/>
 <br>
-<img src="./live-server_20220117.jpg" alt="live-server" width="350"/>
+<img src="./images/live-server_20220117.jpg" alt="live-server" width="40%"/>
 
     
 <br>   
