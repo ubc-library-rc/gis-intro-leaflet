@@ -5,7 +5,7 @@ nav_order: 20
 ---
 ## Acknowledgements
 
-This content of this workshop was authored by Evan Thornberry and Lily Demet.
+This workshop was authored by [Lily Demet](https://geog.ubc.ca/profile/lily-crandall-oral/).
 
 ### Site Template
 Site template adapted from the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill) and available under the [MIT License](http://opensource.org/licenses/MIT).
