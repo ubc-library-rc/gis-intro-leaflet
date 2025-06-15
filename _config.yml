@@ -13,3 +13,10 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-include-cache
+
+exclude:
+  - "content/reference/Leaflet.markercluster-1.4.1/CHANGELOG.md"
+  - "content/reference/Leaflet.markercluster-1.4.1/"
+  - "content/reference/Leaflet.markercluster-1.4.1/README.md"
+
+exclude: [content/reference.Leaflet.markercluster-1.4.1/, content/reference/Leaflet.markercluster-1.4.1/CHANGELOG.md, content/reference/Leaflet.markercluster-1.4.1/README.md]
