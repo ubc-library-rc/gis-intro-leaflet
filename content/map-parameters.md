@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 4. Map Parameters 
-parent: Hands On
+parent: Hands On with Leaflet
 nav_order: 4
 ---
 
@@ -58,7 +58,7 @@ To Do
 Modify the coordinate pair so your map loads over UBC. If Live Server is enabled, you should immediately see the results of this change. Otherwise, save your HTML file, and reload your browser. If everything went as planned, you should see this:
 
 
-![Map loads over the center of UBC](map02.png "Your second map loads over UBC")
+![Map loads over the center of UBC](./images/map02.png "Your second map loads over UBC")
 
 If you don't see a map like the one above, undo your edit in your source code editor (**ctl + z**), and save (**ctl + s**) when it's working again. At that point try again making sure your code syntax is exactly as shown:
 
@@ -79,7 +79,7 @@ Change your loading zoom level your map loads at zoom level 14.
 
 You should see this if you save and refresh your map:
 
-![Map loads over the center of UBC!](map03.png "Map loads over the center of UBC!")
+![Map loads over the center of UBC!](./images/map03.png "Map loads over the center of UBC!")
 
 
 ## Change Base Map

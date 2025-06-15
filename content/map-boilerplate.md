@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 3. Map Boilerplate 
-parent: Hands On
+parent: Hands On with Leaflet
 nav_order: 3
 ---
 

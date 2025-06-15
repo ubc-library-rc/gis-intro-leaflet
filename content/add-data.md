@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 6. Add Data
-parent: Hands On
+parent: Hands On with Leaflet
 nav_order: 6
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 5. Map Data
-parent: Hands On
+parent: Hands On with Leaflet
 nav_order: 5
 ---
 
@@ -36,6 +36,6 @@ To Do
 3. Click the edit layer button to view the feature properties.
 4. You can add or edit the feature's properties there, or directly edit the GeoJSON file's attributes in the Table panel. 
 
-![data point geojson](./data-point-geojsonio.png)
+![data point geojson](./images/data-point-geojsonio.png)
 
 If you look to the bottom left corner of this map you'll see its powered by Mapbox. [Mapbox](https://www.mapbox.com/) is an elaboration on Leaflet's original code library, and now includes products such as toolkits for mobile app development, navigation, web maps, and data management. Mapbox’s service model is based on a paid subscription, but they offer a free service tier for those interested in using Mapbox products for learning. Check out the Research Commons' workshop [An Introduction to Mapbox](https://ubc-library-rc.github.io/intro-mapbox/) if you are interested in learning more.
