@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 7. Configure Popups
-parent: Hands On
+parent: Hands On with Leaflet
 nav_order: 7
 ---
 
