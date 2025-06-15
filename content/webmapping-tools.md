@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Web Mapping Tools
-parent: Introduction
 has_children: true
-nav_order: 3
+nav_order: 2
 ---
 # Tools for Web Mapping
 {: .no_toc}
