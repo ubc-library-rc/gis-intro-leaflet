@@ -14,7 +14,7 @@ This is a beginner-level workshop intended for anyone interested in making dynam
 
 
 ## What you will build
-<!-- <iframe src="./content/final_map.html" style="width:100%; height:500px; border:none;"> </iframe> -->
+<iframe src="./content/parks-map.html" style="width:100%; height:520px; border:none;"> </iframe>
 
 ----
 ## Pre-Workshop Setup
