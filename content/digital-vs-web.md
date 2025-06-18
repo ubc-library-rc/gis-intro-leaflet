@@ -5,10 +5,11 @@ parent: Introduction
 nav_order: 1
 ---
 
-# Digital vs Web Map
+# Digital vs. Web Maps
 
-While we're talking about maps loading and working in the web, let's talk the difference between a **digital map** and a **web map**. The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
-> The process by which a collection of data is compiled and formatted into a virtual image.    
+The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
+> The process by which a collection of data is compiled and formatted into a virtual image.  
+However, there are some crucial distinctions between **digital maps** and **web maps**.
 
 ## Digital and Scanned Maps
 More specifically, a digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps which are scanned and reformatted into digital images of maps, like this old map of Vancouver:
