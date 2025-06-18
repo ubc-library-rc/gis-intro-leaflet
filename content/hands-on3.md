@@ -11,50 +11,45 @@ Now that we've seen what the boilerplate basemap for this workshop looks like, l
 
 ```html
 <html>
-  <head>
-    <title>Leaflet Boilerplate</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Source for your Leaflet JavaScript and CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""></script>
+<head>
 
-    <script src="./ubcbuildings.js" charset="utf-8"></script>
-  </head>
+  <title>Leaflet Boilerplate</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <!-- Your map's HTML container -->
-    <div id="mapid" style="height: 100%;"></div>
+  <!-- Source for your Leaflet JavaScript and CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <!-- Script for your map between <script> and </script> -->
-    <script>
+  <!--Paste your data source script element here-->
+</head>
 
-      // Initialize your map, sets the initial view location and zoom level
-      var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
+<body>
+  <!-- Your map's HTML container -->
+  <div id="mapid" style="height: 100%;"></div>
 
-      //Load the tile layer, paste in new tile layer of choice.
-      var OpenStreetMap_BZH = L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
-      attribution: 'Map Tiles By <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://www.openstreetmap.bzh/" target="_blank">Breton OpenStreetMap Team</a>',
-      subdomains: 'abcd',
+  <!-- Script for your map is contained within the <script> </script> element -->
+  <script>
+
+    // Initialize your map, sets the initial view location and zoom level
+    var mymap = L.map('mapid').setView([49.24640783017241, -123.13659936091362], 10);
+
+    //Load the tile layer, paste in new tile layer of choice.
+    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       minZoom: 0,
       maxZoom: 20,
       ext: 'png',
       scrollWheelZoom: false,
     }).addTo(mymap);
 
-      //Paste your marker here
+  </script>
+</body>
 
-      //Paste the L.geoJSON function here
-
-      //Paste popup function here
-
-    </script>
-  </body>
 </html>
 
 ```
@@ -98,10 +93,7 @@ The HTML document is split into two main sections: the <code>head</code> and the
 
 ---
 
-## Some Notes
-
-- **Version Releases** In the <head> element of your map's HTML document you will see links to Leaflet's CSS and Javascript responsible for the styling and interactivity of your boilerplate basemap. Notice both links include `leaflet@1.9.4`. This refers to the Leaflet version. Just as your computer occasionally requires software updates, Leaflet occasionally releases updates. If your web maps ever stop working for no apparent reason, go to Leaflet's home page, [leafletjs.com](https://leafletjs.com/) and check if a new version has been released. If it has, simply update your CSS and Javascript links to match. 
-    
-
-- **Linking Data Sources** Beneath the Leaflet CSS and Javascript is the line `<script src="./ubcbuildings.js" charset="utf-8"></script>`. This is a link to the map data, wrapped as a javascript variable. While this will be explained further in the following pages, it is important to note two things. First, always link your map data in the head of your map's HTML document. Second, the `./` preceding the filename denotes a relative path. A [relative path](https://www.w3schools.com/html/html_filepaths.asp) is a path to a file that is in the same folder as your HTML document. If your data were stored in downloads, for instance, the source link would look like `src="./downloads/ubcbuildings.js"`. If your data were stored on a server or hosted by an external web source, as are the CSS and Javascript, the source link would direct the web browser reading and rendering your map's HTML document to that address. 
+ **Version Releases** 
+ In the <head> element of your map's HTML document you will see links to Leaflet's CSS and Javascript responsible for the styling and interactivity of your boilerplate basemap. Notice both links include `leaflet@1.9.4`. This refers to the Leaflet version. Just as your computer occasionally requires software updates, Leaflet occasionally releases updates. If your web maps ever stop working for no apparent reason, go to Leaflet's home page, [leafletjs.com](https://leafletjs.com/) and check if a new version has been released. If it has, simply update your CSS and Javascript links to match. 
+{: .note}    
 
