@@ -9,6 +9,8 @@ nav_order: 4
 <br>
 The interaction seen in web maps is powered by JavaScript. There are JavaScript libraries for ALL SORTS of things, and we’re using Leaflet as a foundation for our maps. However you can add customization to your map so that it can do just about anything (remember those plugins?).
 
+Let's see how each element of the boilerplate basemap works. 
+
 For this workshop, we’re not creating any new code or writing new scripts. Instead, we’re going to copy and paste some pre-assembled text so that you can see how it works to build your map. Everything you add to the boilerplate during this workshop will be within the script tags. Let's take a closer look at what's already there and modify each parameter to see how customizable even the basemap can be. 
 
 

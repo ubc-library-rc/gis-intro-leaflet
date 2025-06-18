@@ -6,10 +6,6 @@ nav_order: 3
 ---
 
 # Map Boilerplate
-A [boilerplate](https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/) is a chunk of code that can be used as-is in multiple contexts and often provides the basis for more advanced operations. The boilerplate code for this workshop renders a basemap which we will tinker with and add to in order to build an dynamic cluster map. It’s important that you don’t lose any of this code, and that it remains in its original structure and arrangement. Beyond this workshop, before you experiment with it on your own it's a good idea to make a copy of the original code to refer back to.
-
-
-## Boilerplate Code
 Now that we've seen what the boilerplate basemap for this workshop looks like, let’s explore the code behind it. Return to VS Code (your code editer). Double click `boilerplate.html ` in the Explorer panel to open it. The contents of your boilerplate should look like this: 
 
 
@@ -63,7 +59,7 @@ Now that we've seen what the boilerplate basemap for this workshop looks like, l
 
 ```
 
-
+A [boilerplate](https://www.freecodecamp.org/news/whats-boilerplate-and-why-do-we-use-it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7/) is a chunk of code that can be used as-is in multiple contexts and often provides the basis for more advanced operations. The boilerplate code for this workshop renders a basemap which we will tinker with and add to in order to build an dynamic cluster map. It’s important that you don’t lose any of this code, and that it remains in its original structure and arrangement. Beyond this workshop, before you experiment with it on your own it's a good idea to make a copy of the original code to refer back to.
 
 ## Anatomy of an HTML document 
 The HTML document is split into two main sections: the <code>head</code> and the <code>body</code>. Each of these sections are contained within opening < tags > and closing </ tags >. Notice that because the document is in HTML format, everything is contained within the html tag.

@@ -39,3 +39,8 @@ To Do
 ![data point geojson](./images/data-point-geojsonio.png)
 
 If you look to the bottom left corner of this map you'll see its powered by Mapbox. [Mapbox](https://www.mapbox.com/) is an elaboration on Leaflet's original code library, and now includes products such as toolkits for mobile app development, navigation, web maps, and data management. Mapbox’s service model is based on a paid subscription, but they offer a free service tier for those interested in using Mapbox products for learning. Check out the Research Commons' workshop [An Introduction to Mapbox](https://ubc-library-rc.github.io/intro-mapbox/) if you are interested in learning more.
+
+
+---
+## Some notes on data
+-  mention - layers in geojson HAVE TO BE wgs84, and then wrap as variable (show how) --> show how to style too the polygons!! 
