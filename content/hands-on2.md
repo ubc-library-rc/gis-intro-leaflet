@@ -6,7 +6,9 @@ nav_order: 2
 ---
 
 # Leaflet Basemap & Map Tiles
-Let’s first see what the basic Leaflet web map looks like. From your computer's finder, locate the file `boilerplate.html` and open it with your web browser of choice (e.g., Google Chrome). To do this, you can likely just double click the file. If that fails, control-click (i.e. right-click) the file and choose your web browser as the application to 'open with'. In your web browser, you should see a map that looks like this:
+Let’s first see what the basic Leaflet web map looks like. If you haven't already clicked "Go Live" to launch a live server that renders your boilerplate web map, do so now. If you didn't install this extension, open `boilerplate.html` by navigating to it in your computer's finder, and opening it with a web browser such as Google Chrome. (To do this, you can likely just double click the file. If that fails, control-click (i.e. right-click) the file and choose your web browser as the application to 'open with'.) 
+
+In your web browser, you should see a map that looks like this:
 
 ![first-view](./images/first-view.png)
 
