@@ -13,8 +13,6 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-
-  <script src="./reference/parks-point.js" charset="utf-8"></script>
   <script src="./reference/parks-polygon.js" charset="utf-8"></script>
 
 </head>
@@ -25,29 +23,30 @@
 
   <script>
 
-    
+
     var mymap = L.map('mapid').setView([49.259, -123.137], 12);
 
-    var Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
-	minZoom: 0,
-	maxZoom: 20,
-	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'png'
-}).addTo(mymap);
+    var Jawg_Light = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV', {
+            attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            minZoom: 0,
+            maxZoom: 22,
+            accessToken: 'bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV'
+        }).addTo(mymap);
+
 
 
 
     var outlookPopup = "<img src='./reference/outlook.jpg' alt='outlook' width='200px' <br><br>Resting spot with an outlook";
-    
+
     // specify popup options 
     var outlookOptions =
-        {
-        'maxWidth': '210',
-        'className' : 'custom'
-        }
-    
-   
-    L.marker([49.26711745383916, -123.13196318772637],).bindPopup(outlookPopup,outlookOptions).addTo(mymap);
+    {
+      'maxWidth': '210',
+      'className': 'custom'
+    }
+
+
+    L.marker([49.26711745383916, -123.13196318772637],).bindPopup(outlookPopup, outlookOptions).addTo(mymap);
 
 
     L.geoJson(parkspolygon, { onEachFeature, style: style }).addTo(mymap);
