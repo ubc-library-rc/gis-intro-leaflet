@@ -6,14 +6,14 @@ nav_order: 1
 ---
 # Introduction to Web Mapping
 
-This is a beginner-level workshop intended for anyone interested in making dynamic and interactive maps. Participants will first be introduced to the concept of a web map and shown the various tools and platforms available for making them. A hands-on section will follow, in which participants will explore the code that powers a web map and customize "boilerplate code" to make a web map of attractions across Vancouver. Upon completion of this workshop, participants will 
+This is a beginner-level workshop intended for anyone interested in making interactive maps. Participants will first be introduced to the concept of a web map and shown the various tools and platforms available for web mapping. A hands-on section will follow, in which participants will explore the code that powers a web map and customize it to make a web map of their own. Upon completion of this workshop, participants will 
 
-- Understand the anatomy of a web map, that is, the various components that power an interactive and dynamic map hosted on the web;
-- Have a sense of the different tools and platforms for web mapping, including their advantages and disadvantages relative to individuals' goals and skillsets; and
+- Understand the anatomy of a web map, that is, the various components that work together to power an interactive and dynamic map hosted on the web;
+- Become familiar with the different tools and platforms available for web mapping, including the advantages and disadvantages of each; and
 - Be equipped with the fundamental knowledge and skills to begin web mapping on their own.
 
+Below is an example of the map we will build, showing parks and points of interest across Vancouver. 
 
-## What you will build
 <iframe src="./content/parks-map.html" style="width:100%; height:520px; border:none;"> </iframe>
 
 ----
