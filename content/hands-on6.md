@@ -6,11 +6,10 @@ nav_order: 6
 ---
 
 # Add Data
-Let's add some map features!
-
+Let's add some map features! In this section, you will be shown how to add a single marker, a point data layer, and a polygon layer. You will also be shown how to change their styling. 
 
 ## Add a single marker
-- add a lookout etc. this will be what we'll add an image to later. 
+Let's add a marker for a nice resting spot with a lookout. Once done, you are encouraged to add a second marker in the same way that locates another spot you like in the city. If you happen to have an image of it, keep that close as we'll add it to a popup later. 
 
 Leaflet gives us an easy way to add basic map features called **markers**, which represent point locations on the ground. More information about adding basic features to Leaflet can be found in the [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/). Let's add a marker over UBC campus.    
 
@@ -66,3 +65,10 @@ add polygons and style
 
 
 
+
+
+- **Linking Data Sources** Beneath the Leaflet CSS and Javascript is the line `<script src="./ubcbuildings.js" charset="utf-8"></script>`. This is a link to the map data, wrapped as a javascript variable. While this will be explained further in the following pages, it is important to note two things. First, always link your map data in the head of your map's HTML document. Second, the `./` preceding the filename denotes a relative path. A [relative path](https://www.w3schools.com/html/html_filepaths.asp) is a path to a file that is in the same folder as your HTML document. If your data were stored in downloads, for instance, the source link would look like `src="./downloads/ubcbuildings.js"`. If your data were stored on a server or hosted by an external web source, as are the CSS and Javascript, the source link would direct the web browser reading and rendering your map's HTML document to that address. 
+
+
+Additionally, as we will see in the next step. adding data as we will see in the next step, is not as simple as adding geojson. Rather, we will "wrap a geosjson file as a variable and save as javascript file"  then link that file in the head of our leaflet map html document.
+{: .note}    
