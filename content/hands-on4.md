@@ -44,7 +44,7 @@ The other variable `osm` hold values for the map tile layer that we are using fo
 ## Configure the Starting View
 In the <code>mymap</code> variable you can see a couple of recognizable elements - most noticeably the latitude and longitude coordinate pair [49.489, -123.801]. That location is the geographic center point for the city of Vancouver. When your browser loads the map, it starts with that point in the center of your screen.
 
-Say we want to load the map over UBC, which is about 5 km to the west. We'd need to change that coordinate pair to be the center point of UBC. There are several ways to find this, but an easy one is to use [latlong.net](https://www.latlong.net/). You can also go to Google Maps, and right-click anywhere to copy the coordinates. Remember, these are specific to the projection used by that webmap. Both Google Maps and Leaflet use the same coordinate reference system (WGS84 Web Mercator) so you're all set. 
+Say we want to load the map over Vancouver. We'd need to change that coordinate pair to be the center point of the city. There are several ways to find this, but an easy one is to use [latlong.net](https://www.latlong.net/). You can also go to Google Maps, and right-click anywhere to copy the coordinates. Remember, these are specific to the projection used by that webmap. Both Google Maps and Leaflet use the same coordinate reference system (WGS84 Web Mercator) so you're all set. 
 
 
 To Do
