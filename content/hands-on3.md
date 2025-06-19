@@ -35,16 +35,12 @@ Now that we've seen what the boilerplate basemap for this workshop looks like, l
   <!-- Script for your map is contained within the <script> </script> element -->
   <script>
 
-    // Initialize your map, sets the initial view location and zoom level
-    var mymap = L.map('mapid').setView([49.24640783017241, -123.13659936091362], 10);
+    // Initialize your map
+    var mymap = L.map('mapid').setView([49.489, -123.801], 9);
 
-    //Load the tile layer, paste in new tile layer of choice.
+    //Load the tile layer
     var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      minZoom: 0,
-      maxZoom: 20,
-      ext: 'png',
-      scrollWheelZoom: false,
     }).addTo(mymap);
 
   </script>
@@ -90,6 +86,7 @@ The HTML document is split into two main sections: the <code>head</code> and the
 </html>
 ```
 
+Everything you add to the boilerplate during this workshop will be within the script tags.
 
 ---
 
