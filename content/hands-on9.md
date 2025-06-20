@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Hosting your web map
-parent: Hands On with Leaflet
+parent: Next Steps
 nav_order: 9
 ---
 # Optional: hosting your web map with Github
 
-As is, your web map powered by leaflet exists as a folder of files on your physical computer. You can open it locally, but no one else can access it unless you send them the folder to download to their own computer. This is where web hosting platforms come in. If you upload this folder to a cloud service then you can make the map viewable in web browsers anywhere with internet connection (and no access restrictions).
+As is, your web map powered by Leaflet exists as a folder of files on your physical computer. You can open it locally, but no one else can access it unless you send them the folder to download to their own computer. This is where web hosting platforms come in. If you upload this folder to a cloud service then you can make the map viewable in web browsers anywhere with internet connection (and no access restrictions).
 
 If you have a website and access to local server, that’s an option too. However, if not, Github is a low-barrier solution. Github is an internet hosting service used by code developers that allows you to upload files into a repository, or project folder, where they can be shared and collaboratively tracked and edited by a team. Conventionally you’d work between your local computer and the web account, tracking changes as you go with *git*, a file control software. See the Research Common’s [Introduction to git and Github](https://ubc-library-rc.github.io/intro-git/) for more. However, we can work directly and exclusively from the web interface. The steps to host your dynamic on the web using Github are as follows:
 
@@ -41,67 +41,74 @@ Once you've made an account, go to **Repositories** and make a new repository (a
 
 > - Scroll down to the bottom and **Create repository**.
 
-## 3. Upload your web map folder to your repository
+## 3. Upload your workshop folder to your repository
 
 <!-- IMPORTANT: before uploading your webmap folder, delete the numbers trailing the name so that the folder is now named only `qgis2web`.  -->
 
-> - Drag and drop your workshop data folder to upload. 
+> - Drag and drop the `webmapping-workshop` folder. Remember, you are uploading the **unzipped** folder you have been coding in all workshop.  
 
-[ insert image ] like in https://ubc-library-rc.github.io/gis-plugins-qgis/content/hosting-webmap.html
+<img src="./images/hosting01.png" style="width:100%">
 
-> - When done, scroll down to bottom of screen and commit changes with message `added webmap folder`.
+> - When done, scroll down to bottom of screen and commit changes. The default commit message is "Add files via upload", but you can write something more informative if you want like "added webmap folder". 
+
+<img src="./images/hosting02.png" style="width:100%">
 
 <br>
 You should now see your file in your repository:
-[insert image]
+<img src="./images/hosting03.png" style="width:100%">
+<br>
 
 ## 4. Create index file
-Now create an index.html file wherein your map can be embedded for display. 
+Now create an `index.html` file wherein your map can be embedded for display. 
 
 Go to **Add file** and this time select **+Create new file**. Copy and paste the below code into the file:
 
-[edit this]
 
 ```html
-<!DOCTYPE HTML>
+<html>
 <head>
-    <title>workshop webmap</title>
+    <title>Vancouver</title>
     </head>
 
 <body>
-<iframe src="./qgis2web/index.html" style="width:100%; height:700px; border:none;"></iframe>
+<iframe src="./webmapping-workshop/boilerplate.html" style="width:100%; height:100%; border:none;"></iframe>
 </body>
 </html>
 ```
 
-Give the file name `index.html` and commit.
+**IMPORTANT** Give the file the name `index.html` and commit.
 
-[insert image]
+<img src="./images/hosting04.png" style="width:100%">
 
 <br>
 
 ## 5. Make a Github page from the index file
 [Github Pages](https://pages.github.com/) allow you to create a little website from a code repository. The non-nested index.html file of your repository will be the landing page of your site. I say non-nested because you have another index.html file inside your workshop/uploaded folder. In the step above, we embedded this inside the main `index.html` file.
 
-To activate Github Pages, go to your repository's **Settings**. 
-[image]
+To activate Github Pages, go to your repository's **Settings** tab. Then click on **Pages**. 
+<br>
+<img src="./images/hosting05.png" style="width:100%">
 
 <br>
 
-Then go to **Pages**:
+Change branch from None to **main** and **SAVE**.
 
-[image]
-
-<br>
-Change branch from Non to **main** and **SAVE**.
-
-[image]
+<img src="./images/hosting06.png" style="width:100%">
 
 <br>
 
 Once you hit save, give it a moment to build. After a minute or two, refresh your browser window. You should see a link now to your new website! Visit the site and explore your map once again. Now you can share it far and wide!
 
-[screenshot with link at top highlighted]
+<img src="./images/hosting07.png" style="width:100%">
 
-One last step:
-Copy the link and return to your repo code. In the **About** section at the top right, add this link so that visitors to your repository can also access your website. 
+<br>
+
+<img src="./images/hosting08.png" style="width:100%">
+
+<br>
+
+## 6. Linking your web map
+
+One last step: Copy the link and return to your repo code. In the **About** section at the top right, add this link so that visitors to your repository can also access your website. 
+
+<img src="./images/hosting09.png" style="width:100%">
