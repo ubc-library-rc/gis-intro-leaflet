@@ -26,14 +26,12 @@
 
     var mymap = L.map('mapid').setView([49.259, -123.137], 12);
 
-    var Jawg_Light = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV', {
+   var Jawg_Light = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV', {
             attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             minZoom: 0,
             maxZoom: 22,
             accessToken: 'bVkG5E0PiokoP5WZRP9zpus9Bac8j9sT0HnaXdGFF8xT0fY4ggBi7TgTV1660qXV'
         }).addTo(mymap);
-
-
 
 
     var outlookPopup = "<img src='./reference/outlook.jpg' alt='outlook' width='200px' <br><br>Resting spot with an outlook";
