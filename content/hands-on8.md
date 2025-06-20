@@ -7,7 +7,7 @@ nav_order: 8
 # Practice
 
 ## Add another marker
-Try adding another stand-alone marker to your map, and adding an image to the popup. 
+Try adding another stand-alone marker to your map, and adding an image to the popup. Remember to add any images you want to include to your `webmapping-workshop` data folder so you can easily link them with relative file paths. 
 
 ## Add another dataset
 Practice what you've learned in this workshop by choosing a new dataset from Vancouver’s [open data portal](https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified) to add to your web map. You will need to download the dataset in GeoJSON format, move it to your `webmapping-workshop` folder, wrap it as a JavaScript variable, and add it as both a data source in the `<head>` element *and* as a data layer in your `<script>` element. 
