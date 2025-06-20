@@ -20,7 +20,7 @@ Below is an example of the map we will build, showing parks and points of intere
 ## Pre-Workshop Setup
 All of the data for this workshop is free and openly available. However, to get started you'll need to download and save it to your physical computer (in Desktop or Downloads, *not* OneDrive). During the hands-on portion, you'll work with this data in a source-code editor by copy/pasting the code provided to you. Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
-[Download Data](content/intro-leaflet-data.zip){: .btn .btn-blue }
+[Download Data](./webmapping-workshop.zip){: .btn .btn-blue }
 
 ## Required Software  
 - **Internet browser (and an internet connection)**. The most recent version of [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org) are recommended. 
