@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 1. Open Data Folder
-parent: Hands On with Leaflet
+parent: Anatomy of a Web Map
 nav_order: 1
 ---
 # Open Data in Code Editor

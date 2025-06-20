@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 3. Map Boilerplate 
-parent: Hands On with Leaflet
+parent: Anatomy of a Web Map
 nav_order: 3
 ---
 

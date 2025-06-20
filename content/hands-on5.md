@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 5. Map Data
-parent: Hands On with Leaflet
+parent: Anatomy of a Web Map
 nav_order: 5
 ---
 
