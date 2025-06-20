@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 6. Adding Data
+title: Adding Data
 parent: Hands On with Leaflet
 nav_order: 6
 ---
@@ -107,10 +107,10 @@ If you find it busy, you can always remove the `L.geoJson(communityGardens).addT
 <br>
 
 ## Styling polygons
-{: .no_toc}
+
 Perhaps you want to change the way parks polygons are styled. For example, we could change them to be a solid color such as green. This way, they'd stand out against the basemap. 
 
-to change the styling of a polygon data layer, we will 1) write a function that styles a specific layer, in this case `parks`, and 2) add our new style as an option to that data layer. In your web map HTML boilerplate document, replace the line of code for parks with the following:
+to change the styling of a polygon data layer, we will 1) write a *function* that styles a specific layer, in this case `parks`, and 2) add our new style as an option to that data layer. A *function* in programming is a block of code that does some specific task, like a mini program. In your web map HTML boilerplate document, replace the line of code for parks with the following:
 
 ```js
  L.geoJson(parks, {style: style}).addTo(mymap);
