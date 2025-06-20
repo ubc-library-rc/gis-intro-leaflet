@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 2. Map Tiles
-parent: Anatomy of a Web Map
+parent: Hands On with Leaflet
 nav_order: 2
 ---
 

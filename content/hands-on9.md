@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 8. Hosting your web map
+title: Hosting your web map
 parent: Hands On with Leaflet
-nav_order: 8
+nav_order: 9
 ---
 # Optional: hosting your web map with Github
 
