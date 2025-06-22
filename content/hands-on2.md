@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # Leaflet Basemap & Map Tiles
-Let’s first see what the basic Leaflet web map looks like. If you haven't already clicked "Go Live" to launch a live server that renders your boilerplate web map, do so now. If you didn't install this extension, open `boilerplate.html` by navigating to it in your computer's finder, and opening it with a web browser such as Google Chrome. (To do this, you can likely just double click the file. If that fails, control-click (i.e. right-click) the file and choose your web browser as the application to 'open with'.) 
+Let’s first see what the basic Leaflet web map looks like. If you haven't already, click "Go Live" to launch a live server that renders your boilerplate web map. If you didn't install this extension to VS Code, open `boilerplate.html` by navigating to it in your computer's finder, and open it with a web browser such as Google Chrome. (To do this, you can likely just double click the file. If that fails, control-click (i.e. right-click) the file and choose your web browser as the application to 'open with'.) 
 
 In your web browser, you should see a map that looks like this:
 
@@ -14,6 +14,7 @@ In your web browser, you should see a map that looks like this:
 
 Keep this browser tab open - we’ll return to it in the next section.
 
+---- 
 
 ## Map Tiles
 **Map tiles** are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. Each tile is 256px by 256px (traditionally a .png image at roughly 20-40kb each), making them quick to load over an internet connection. These tiles provide a geographic reference for other data layers that you might add later (we'll get to that in a minute). You've probably noticed them if you've had choppy internet connection and had to wait for data to load:
