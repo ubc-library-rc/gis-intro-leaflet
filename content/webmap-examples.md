@@ -5,19 +5,22 @@ parent: Introduction
 nav_order: 3
 ---
 # Different kinds of web maps... 
-Maps can be static or dynamic, they can be digital, web-based, or physical, and often, projects will incorporate more than one kind of map in their output. However, any map can be categorized into one of two main kinds of maps: **reference maps** and **thematic maps**. 
+<!-- Maps can be static or dynamic. -->
+Maps can be digital, web-based, or physical, and often, projects will incorporate more than one kind of map in their output. However, any map can be categorized into one of two main kinds of maps: **reference maps** and **thematic maps**. 
 
-Reference maps are useful to show the lay of the land, such as the geographic context surrounding your research location or area of interest. Reference maps can be as simple as a drop pin location, or more complex with data layers, labeling, and insets. Thematic maps, on the other hand, use visualization techniques such as color, size, shape, and density to convey further information about a dataset. Writes Statistics Canada: “A thematic map shows the spatial distribution of one or more specific data themes for standard geographic areas.” For example, a map showing the population of each neighborhood by a color gradient would be a thematic map, as it visualizes the spatial distribution of population within the geographic area of a neighborhood. 
+Reference maps are useful to show the lay of the land, such as the geographic context surrounding your research location or area of interest. Reference maps can be as simple as a drop-pin location, or more complex with multiple data layers, labeling, and insets. Thematic maps, on the other hand, use visualization techniques such as color, size, shape, and density to convey further information about a dataset. Writes Statistics Canada: “A thematic map shows the spatial distribution of one or more specific data themes for standard geographic areas.” For example, a map showing the population of each neighborhood by a color gradient would be a thematic map, as it visualizes the spatial distribution of population within the geographic area of neighborhoods. 
 
-There is a case to be made that all maps are thematic, as the definition of boundaries, borders, names, etc. is a political and almost always contested act. In other words, there are no neutral maps that simply represent an objective reality or truth. See [Crampton and Krygier (2006)](https://acme-journal.org/index.php/acme/article/view/723) for a seminal introduction to critical cartography, or [Wang and Liu (2022)](https://www.researchgate.net/publication/365011390_Maps_and_cartography_Progress_in_international_critical_cartographyGIS_research) for an overview of critical cartography and GIS through the last several decades. See also *The Power of Maps* by Denis Wood. 
+There is a case to be made that all maps are thematic, as the definition of boundaries, borders, names, etc. is a political - and almost always contested - act. In other words, there are no neutral maps that simply, impartially, represent an objective reality or truth. See [Crampton and Krygier (2006)](https://acme-journal.org/index.php/acme/article/view/723) for a seminal introduction to critical cartography, or [Wang and Liu (2022)](https://www.researchgate.net/publication/365011390_Maps_and_cartography_Progress_in_international_critical_cartographyGIS_research) for an overview of critical cartography and GIS through the last several decades. See also the classic by Denis Wood, *The Power of Maps*.
 
-This workshop will focus on the anatomy and construction of reference web maps. However, examples of both reference web maps and thematic web maps are included below. Take a moment to familiarize yourself with what these may look like. The next section will introduce the different tools and platforms with which they were made. 
+**This workshop will focus on the anatomy and construction of reference web maps.** However, examples of both reference web maps and thematic web maps are included below. Take a moment to familiarize yourself with what these may look like. What might be best for your project? The next section will introduce the different tools and platforms with which each of the following web maps were made. 
  
 ----
 
 
 ## Reference Web Maps
-The most basic reference web map is simply a basemap, contained in a viewbox with controls and an attribution at the bottom. Much like their static counterparts, reference web maps can be as simple as a basemap with a drop-pin locator or a single data layer. Explore the interactive capabilities of each of the following examples.
+The most basic reference web map is a basemap, contained in a viewbox with controls and an attribution at the bottom. Explore the interactive capabilities of each of the following examples.
+
+<!-- Much like their static counterparts, reference web maps can be as simple as a basemap with a drop-pin locator or a single data layer. -->
 
 <iframe src="./reference/jawg-map.html" style="width:90%; height:450px; border:none;"> </iframe>
 <br>
@@ -25,14 +28,10 @@ The most basic reference web map is simply a basemap, contained in a viewbox wit
 <br>
 <iframe src="https://www.google.com/maps/d/embed?mid=13jisTC20ztRT93EJS0u_6u4_lzvEehk&ehbc=2E312F" width="640" height="480"></iframe>
 
+<br>
 
-<iframe width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/vancouver-parks_1219886?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#12/49.2605/-123.0997"></iframe><p><a href="//umap.openstreetmap.fr/en/map/vancouver-parks_1219886?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#12/49.2605/-123.0997">See full screen</a></p>
+<iframe width="90%" height="500px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/vancouver-parks_1219886?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#12/49.2605/-123.0997"></iframe>
 
-<!-- 
-now show one with a simple data layer - like parks
-*Maybe add an example that's like: a nice walk I took.*
-
-other reference maps > weather underground, open street maps- google maps, osmAnd. show one also thats made from qgis to web.  -->
 
 ### Some other reference web maps out there:
 
@@ -48,8 +47,14 @@ other reference maps > weather underground, open street maps- google maps, osmAn
 ---- 
 
 
-## Thematic Webmaps 
-Thematic web maps visualize the results of some spatial analysis. With a bit of code, you can create choropleth, cluster, and proportional symbol web maps.
+## Thematic Web Maps 
+Thematic web maps visualize the results of some spatial analysis. With a bit of code, you can create choropleth, cluster, or proportional symbol web maps. Note, however, that the construction of thematic web maps often requires prior data processing and modification in software such as QGIS. 
+
+<!--  could do an advanced workshop on that) also include little note for each indicating what tools software or workflows used to make it. (see mychestnut tree link elswhere) -->
+
+
+<!-- (also discuss making reference or thematic more elaborate in leaflet, with timesliders etc) -->
+
 
 <sub>[See below choropleth example as full-page map](./reference/leaflet-choropleth-map.html)</sub>
 <iframe src="./reference/leaflet-choropleth-map.html" style="width:90%; height:400px; border:none;"> </iframe>
@@ -65,9 +70,5 @@ Thematic web maps visualize the results of some spatial analysis. With a bit of 
 <sub>[See below proportional symbol map example as full-page map](./reference/leaflet-proportional-symbol-map.html)</sub><br> Hover over the circles to learn the municipality population for Vancouver Island.
 <iframe src="./reference/leaflet-proportional-symbol-map.html" style="width:90%; height:450px; border:none; "></iframe>
 
-The construction of thematic web maps often requires prior data processing and modification in software such as QGIS. 
-
-<!--  could do an advanced workshop on that) also include little note for each indicating what tools software or workflows used to make it. (see mychestnut tree link elswhere) -->
-
-
-<!-- (also discuss making reference or thematic more elaborate in leaflet, with timesliders etc) -->
+<br>
+If you're beginning to think web maps might not be for you, all reference and thematic maps can also be made statically. Check out the Research Common's workshop on [Telling Spatial Stories](https://ubc-library-rc.github.io/gis-spatial-stories/content/determining-output.html) for guidance on determining the best output for your project goals. 
