@@ -19,8 +19,10 @@ nav_order: 1
     
 <br>    
 *3*{: .circle .circle-purple} Now, double click `boilerplate.html`  to open it.
-If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. Note: Depending on your computer’s operating system, you may need to hit Ctrl + S to save your document edits before Live Server will update to reflect your changes. Live Server alleviates the need to constantly refresh your browser each time you make a change.
+If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to “Go Live.” Click “Go Live” to launch a local server and watch your map automatically update in a web browser. 
+
+  - **Note:** Depending on your computer’s operating system, you may need to hit Ctrl + S to save your document edits before Live Server will update to reflect your changes. Live Server alleviates the need to constantly refresh your browser each time you make a change.
 
 ![go live](./images/go-live_20250618.png)
 
-Because we will be working back and forth between the browser page the code editor, it’s helpful to arrange your computer screen(s) in a way where you can either see both windows at once or are able to toggle between the two. This way, every time you modify the html code you can see the changes in your browser. You’ll also want to have workshop website accessible.
+Because we will be working back and forth between the browser page and the code editor, it’s helpful to arrange your computer screen(s) in a way where you can either see both windows at once or are able to toggle between the two. This way, every time you modify the HTML code you can see the changes in your browser. You’ll also want to have workshop website accessible.
