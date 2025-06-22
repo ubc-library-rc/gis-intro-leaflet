@@ -6,7 +6,7 @@ nav_order: 1
 ---
 # Introduction to Web Mapping
 
-This is a beginner-level workshop intended for anyone interested in making interactive maps. Participants will first be introduced to the concept of a web map and shown the various tools and platforms available for web mapping. A hands-on section will follow, in which participants will explore the code that powers a web map and customize it to make a web map of their own. Upon completion of this workshop, participants will 
+This is a beginner-level workshop intended for anyone interested in making interactive maps. Participants will first be introduced to the concept of a web map and the various tools and platforms available for web mapping. A hands-on section will follow, in which participants will explore the code that powers a web map, customizing it to make a web map of their very own. Upon completion of this workshop, participants will 
 
 - Understand the anatomy of a web map, that is, the various components that work together to power an interactive and dynamic map hosted on the web;
 - Become familiar with the different tools and platforms available for web mapping, including the advantages and disadvantages of each; and
@@ -18,13 +18,14 @@ Below is an example of the map we will build, showing parks and points of intere
 
 ----
 ## Pre-Workshop Setup
-All of the data for this workshop is free and openly available. However, to get started you'll need to download and save it to your physical computer (in Desktop or Downloads, *not* OneDrive). During the hands-on portion, you'll work with this data in a source-code editor by copy/pasting the code provided to you. Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
+All of the data for this workshop is free and openly available. However, to get started you'll need to download and save it to your physical computer (in Desktop or Downloads, *not* OneDrive). During the hands-on portion of this workshop, you'll work with this data in a code editor. Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
 [Download Data](./webmapping-workshop.zip){: .btn .btn-blue }
 
-## Required Software  
-- **Internet browser (and an internet connection)**. The most recent version of [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org) are recommended. 
+### Required Software  
 - **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop will use [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
+- **Internet browser (and an internet connection)**. The most recent version of [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org) are recommended. 
+
 
 ### Additional Preparation
 Making maps is hard. And, without practice, working in the web is hard too. While there are no prerequisites for this workshop, familiarity with cartographic principles and a basic understanding of what code is and does will make diving into web mapping easier. Refer to these resources at any time:
@@ -35,7 +36,6 @@ Making maps is hard. And, without practice, working in the web is hard too. Whil
 
 
 
-<br>
 ----
 #### GIS Resources at UBC:
 
