@@ -91,6 +91,6 @@ Everything you add to the boilerplate during this workshop will be within the sc
 ---
 
  **Version Releases** 
- In the <head> element of your map's HTML document you will see links to Leaflet's CSS and Javascript responsible for the styling and interactivity of your boilerplate basemap. Notice both links include `leaflet@1.9.4`. This refers to the Leaflet version. Just as your computer occasionally requires software updates, Leaflet occasionally releases updates. If your web maps ever stop working for no apparent reason, go to Leaflet's home page, [leafletjs.com](https://leafletjs.com/) and check if a new version has been released. If it has, simply update your CSS and Javascript links to match. 
+ In the `<head>` element of your map's HTML document you will see links to Leaflet's CSS and Javascript responsible for the styling and interactivity of your boilerplate basemap. Notice both links include `leaflet@1.9.4`. This refers to the Leaflet version. Just as your computer occasionally requires software updates, Leaflet occasionally releases updates. If your web maps ever stop working for no apparent reason, go to Leaflet's home page, [leafletjs.com](https://leafletjs.com/) and check if a new version has been released. If it has, simply update your CSS and Javascript links to match. 
 {: .note}    
 
