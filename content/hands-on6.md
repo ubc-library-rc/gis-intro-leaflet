@@ -7,7 +7,7 @@ nav_order: 6
 
 # Adding Data
 {: .no_toc}
-It's now time to add some map features! In this section, you will be shown how to add a single marker, a point data layer, and a polygon layer. You will also be shown how to change their styling. The data for this workshop can be found in the `webmapping-workshop` folder, which should already be open in VSCode. The point layer `community-gardens.js` and the polygon layer `parks-polygon.js` were downloaded from Vancouver's [Open Data Portal](https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified). 
+It's now time to add some map features! In this section, you will be shown how to add a single marker, a point data layer, and a polygon layer to the boiler plate web map. The data for this workshop can be found in the `webmapping-workshop` folder, which should already be open in VS Code. The point layer `community-gardens.js` and the polygon layer `parks-polygon.js` were downloaded from Vancouver's [Open Data Portal](https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified). 
 
 
 <details open markdown="block">
@@ -20,12 +20,12 @@ It's now time to add some map features! In this section, you will be shown how t
 </details>
 ----
 
-## Add a single marker
-First things first, let's add a single marker. We will add a marker for a nice resting spot on False Creek. Once you've learned how to add a marker, you are encouraged to add a second marker that corresponds to another spot you like. If you happen to have an image of/from that location, add that to your `webmapping-workshop` folder now as we'll add it to the marker's pop-up later on. 
+## Adding a single marker
+First things first, let's add a single marker. We will add a marker for a nice resting spot along False Creek. Once you've learned how to add a marker, you are encouraged to add a second marker that corresponds with another spot of your choice. If you happen to have an image of/from that location, add that to your `webmapping-workshop` folder; later on you'll be shown how to include it in your marker's pop-up. 
 
 To Do
 {: .label .label-green }
-Add a Leaflet marker by copy/pasting the following code into the <code>script</code> element of your map boilerplate HTML document.
+Add a Leaflet marker by copy/pasting the following code into the <code>script</code> element of your map boilerplate HTML document, just under the code for map tiles. 
 
 Copy/paste
 {: .label .label-purple }
@@ -38,16 +38,16 @@ You should see something like this (click on the marker too!):
 
 ----
 
-## Add a point layer 
+## Adding a point layer 
 Now let's add a point layer representing community gardens across Vancouver. 
-The data layer already exists for us in the `webmapping-workshop` folder. Double click it to open it. If needed, right-click anywhere in the document and "Format Document". 
+The data layer already exists for us in the `webmapping-workshop` folder. Double click it to open it. If needed, right-click anywhere in the document and click "Format Document". You can also click `Option + z` to justify the document so all the code fits within the margins of your window. 
 
  <img src="./images/community-gardens-data.png" style="width:100%">
 
-> **Note:** While the data was downloaded from Vancouver Open Data Portal in `.geojson` format, and you can comprehend each feature, you'll notice the filetype is `.js`. This is because the entire geoJSOn dataset was "wrapped as a variable", specifically `communityGardens`, and saved as a JavaScript file. This allows us to reference the dataset as a variable in our web map. To "wrap a geoJSON dataset as a variable", all that was done was to add `var communityGardens = ` to the beginning of the dataset, and then the dataset was "Saved as" a JavaScript file type. The data itself is still in geoJSON, it's just nicely packaged for us now. In the [Practice](./practice.md) section, you'll try doing this yourself. 
+ -  **Note:** While the data was downloaded from Vancouver Open Data Portal in `.geojson` format, and you can comprehend each feature, you'll notice the filetype is `.js`. This is because the entire geoJSOn dataset was "wrapped as a variable", specifically `communityGardens`, and saved as a JavaScript file. This allows us to reference the dataset as a variable in our web map. To "wrap a geoJSON dataset as a variable", all that was done was to add `var communityGardens = ` to the beginning of the dataset, and then the dataset was "Saved as" a JavaScript file type. The data itself is still in geoJSON, it's just nicely packaged for us now. In the [Practice](./practice.md) section, you'll try doing this yourself. 
 
 <br>
-Though data layers are more complex than single markers, we add them to a web map in a similar manner: by creating a new variable holding the values for the GeoJSON feature(s).    
+Though data layers are more complex than single markers, we add them in a similar manner: by creating a new variable holding the values for the geoJSON feature(s).    
 
 To add a point layer of community gardens to your web map of Vancouver, copy and paste the following line of code *below your marker(s)*.
 
