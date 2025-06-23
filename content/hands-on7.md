@@ -8,15 +8,10 @@ nav_order: 7
 # Configure Popups
 {: .no_toc}
 
-Both the community gardens and parks layers contain attribute values for each feature. We got a glimpse of these when looking at the datasets in VSCode. Currently, if we click on the features in our web map we cannot view this information because we haven't yet configured our map to load pop-ups for each layer. To add pop-ups with specified attribute information, we'll need to add more functions. 
+Both the community gardens and parks layers contain attribute values for each feature. We got a glimpse of these when looking at the datasets in VS Code. Currently, if we click on the features in our web map, we cannot view this information because we haven't yet configured our map to load pop-ups for each layer. To add pop-ups with specified attribute information, we'll need to add more functions. 
 
 Below, you'll be shown how to add pop-ups to the point layer, the polygon layer, and an image to the original single marker layer. 
 
-<!-- - look into adding /including photo in popup. maybe do for one place, like jrogers swings. 
-
-- add popups for differen things... show how to have pooputs for points and polygons by creating new script element. 
-
-- - do custom marker text for community gardens.  -->
 
 <details open markdown="block">
   <summary>
@@ -36,7 +31,7 @@ Let's begin by adding the names of community gardens as pop-ups to our web map. 
 
 <br>
 
-The function we'll use to add pop-ups to each feature is called `onEachFeature`.  Then, just like when styling the parks, we have to add an option `{onEachFeature}` to the code that loads the data layer that references this new function. In your web map's HTML document, replace the code for community gardens point layer with the following:
+The function we'll use to add pop-ups to each feature is called `onEachFeature`.  Then, just like when styling the parks, we have to add an option `{onEachFeature}` to the code that loads the data layer that references this new function. In your web map's HTML document, replace the code that adds community gardens as a point layer with the following:
 
 
 Copy/Paste
@@ -59,6 +54,8 @@ If all went well, the name of each community garden should popup when you click.
 <br>
 
 ![map of garden popups](./images/map10.png)
+
+
 
 ## Naming Parks
 Naming polygons is the same as naming points. Replace the line of code that loads your parks layer with the following (but keep the styling function as is). 
@@ -104,7 +101,10 @@ L.geoJSON(communityGardens, {
 ```
 
 <br>
+
 ![map of elaborated garden popup](./images/map11.png)
+
+----
 
 
 ## Adding images to pop-ups
