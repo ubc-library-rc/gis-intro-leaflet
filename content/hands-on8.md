@@ -14,7 +14,7 @@ Practice what you've learned in this workshop by choosing a new dataset from Van
 
 Take a moment to practice on your own. Reference the hints below if you get stuck. 
 
-1. For example, download [Vancouver Public Libraries](https://opendata.vancouver.ca/explore/dataset/libraries/information/) (polygon representation) from the Open Data Portal. 
+1. For example, download [Local area boundaries, aka neighborhoods](https://opendata.vancouver.ca/explore/dataset/local-area-boundary/export/?disjunctive.name) or [Vancouver Public Libraries](https://opendata.vancouver.ca/explore/dataset/libraries/information/) (polygon representation) from the Open Data Portal. 
 <img src="./images/practice01.png" style="width:100%;">
 
 2. Move the download file, `libraries.geojson`, to your workshop folder. It's important your data be in the same folder of your web map's HTML document. 
@@ -39,7 +39,7 @@ Take a moment to practice on your own. Reference the hints below if you get stuc
 7. Return to VSCode and open the new dataset, `vpl.js`. Everything should be in order now with no warnings. 
 
 
-8. Now, return to your `boilerplate.html` document in VSCode. In the `<head>` tag, add a line beneath your current data sources that directs your map to your libraries data: <br>
+8. Now, return to your `boilerplate.html` document in VS Code. In the `<head>` tag, add a line beneath your current data sources that directs your map to your libraries data: <br>
 ```html
 <script src="./libraries.js" charset="utf-8"></script>
 ```
