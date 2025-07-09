@@ -7,17 +7,15 @@ nav_order: 1
 
 # Digital vs. Web Maps
 
-The term digital map is used quite often, but what does it mean? Wikipedia's entry for "Digital Mapping" is:
-> The process by which a collection of data is compiled and formatted into a virtual image.  
-However, there are some crucial distinctions between **digital maps** and **web maps**.
+The term digital map is used quite often, but what does it mean? Wikipedia describes "Digital Mapping" as "The process by which a collection of data is compiled and formatted into a virtual image." However, there are some crucial distinctions between **digital maps** and **web maps**.
 
-## Digital and Scanned Maps
-A **digital map** is a map that was somehow derived from a computer. Sometimes we use this term to refer to paper maps which are scanned and reformatted into digital images of maps, like this old map of Vancouver:
+## Digital Maps
+A **digital map** is a map that was somehow derived from a computer. Sometimes we use this term to refer to paper maps which are scanned and reformatted into digital images, like this old map of Vancouver:
 
 ![Digital surrogate of a historical map of Vancouver](./images/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")    
 <sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>     
 
-More commonly, we use this term for "born digital" maps like this cycling map from the City of Vancouver. This map was likely constructed with geospatial data and a Geographic Information System (GIS), and published as a PDF. It visualizes cycling infrastructure at a static scale and dimension.
+More commonly, we use this term for "born digital" maps like this cycling map from the City of Vancouver. This map was likely constructed with geospatial data and a Geographic Information System (GIS), and published as a PDF (although there are some paper copies out there). It visualizes cycling infrastructure at a static scale and dimension.
 
 ![Front of City of Vancouver Cycling Map 2019](./images/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")     
 
