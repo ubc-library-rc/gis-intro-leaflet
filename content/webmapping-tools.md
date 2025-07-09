@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Tools for Web Mapping
 {: .no_toc}
-There are a variety of tools for making web maps. Some require you engage with code while others provide simple drag-and-drop interfaces. In this workshop, you will be shown how code works to power a web map, and be guided through customizing given code, called "boilerplate code", to make a map of your own. However, it's useful to know about some alternatives that don't require any coding! Outlined below are different tools/platforms for web mapping. Each option is evaluated for its relative affordances and limitations, and resources for continued learning more are listed.
+There are a variety of tools for making web maps. Some require you engage with code, while others provide simple drag-and-drop interfaces. In this workshop, you will learn how code works to power a web map, and be guided through customizing some given code, called "boilerplate code", to make a map of your own. However, it's helpful to know about some alternatives that don't require any coding! Outlined below are different tools/platforms for web mapping. Each option is evaluated for its relative affordances and limitations, and resources for continued learning are listed.
 
 If, after this workshop, you are unsure whether web mapping itself best suits your project goals, check out our [spatial stories workshop](https://ubc-library-rc.github.io/gis-spatial-stories/) to see other output format options. You can also email `library.gis@ubc.ca` with questions, or book a 1:1 consult with the geospatial team [here](https://libcal.library.ubc.ca/appointments/research_commons#s-lc-public-pt).
 {: .note}
@@ -25,13 +25,15 @@ If, after this workshop, you are unsure whether web mapping itself best suits yo
 
 ## Google MyMaps 
 
-We recommend Google as a web mapping platform *for its Google MyMaps service  only*. With [Google MyMaps](https://www.google.com/maps/about/mymaps/), you create simple maps with drop pin locations or imported data layers, like the below map: 
+We recommend Google as a web mapping platform for its *Google MyMaps service  only*. With [Google MyMaps](https://www.google.com/maps/about/mymaps/), you can create simple maps with drop pin locations or import data layers. Here's an example: 
 <iframe src="https://www.google.com/maps/d/embed?mid=13jisTC20ztRT93EJS0u_6u4_lzvEehk&ehbc=2E312F" width="100%" height="480"></iframe>
 <br>
 
 #### Google Advantages and Disadvantages
 {: .no_toc}
- - While the Google Maps platform offers a panoply of mapping tools including [dynamic maps](https://mapsplatform.google.com/maps-products/dynamic-maps/), you must *be very careful about surreptitious charges*. For example, while the [embed maps API](https://developers.google.com/maps/documentation/embed/get-started?hl=en) is free with unlimited usage, you must sign up for Google Cloud to use it. Google Cloud is only free for 90 days, after which you will be charged $200 monthly. In our opinion, beyond the simple drag-and drop visualizations offered by MyMaps, it is recommended to invest your time and energy in learning a free and open-source option like uMap or Leaflet (detailed below). 
+ - While the Google Maps platform offers a panoply of mapping tools including [dynamic maps](https://mapsplatform.google.com/maps-products/dynamic-maps/), you must *be very careful about surreptitious charges*. For example, while the [embed maps API](https://developers.google.com/maps/documentation/embed/get-started?hl=en) is free with unlimited usage, you must sign up for Google Cloud to use it. Google Cloud is only free for 90 days, after which you will be charged $200 monthly. In our opinion, beyond the simple drag-and-drop visualizations offered by Google MyMaps, it is recommended to invest your time and energy in learning a free and open-source option like uMap or Leaflet (detailed below). 
+ - Very easy to make a map quickly; beginner friendly; no coding required
+ - Limited customization 
 
 #### Resources for Google MyMaps
 {: .no_toc}
@@ -40,7 +42,7 @@ We recommend Google as a web mapping platform *for its Google MyMaps service  on
 ----
 
 ## uMap
-[uMap](https://umap.openstreetmap.fr/en/) is a free and open-source platform that allows you to create web maps using OpenStreetMap (OSM) data. You can then embed these maps into an existing website, or simply share the link to your final map with collaborators and audiences. With uMap, you can choose from a variety of basemaps, and even upload and add data layers of your own! uMap is very easy to use, and has ample customization options. It is an entirely web-based interface and requires no prior expertise. 
+[uMap](https://umap.openstreetmap.fr/en/) is a free and open-source platform that allows you to create web maps using OpenStreetMap (OSM) data. You can then embed these maps into an existing website, or simply share the link to your final map with collaborators and audiences. With uMap, you can choose from a variety of basemaps, and even upload and add data layers of your own! uMap is very easy to use, and has ample customization options. It is an entirely web-based interface and requires no coding or prior expertise. 
 
 The below map was created in 5 minutes using data downloaded from Vancouver [open data portal](https://opendata.vancouver.ca/explore/dataset/parks-polygon-representation/information/). 
 
@@ -58,14 +60,14 @@ The below map was created in 5 minutes using data downloaded from Vancouver [ope
 
 ## QGIS to Web Map plugin 
 
-If you’re familiar with [QGIS](https://qgis.org/), there’s actually a nifty plugin for turning your QGIS map into an interactive webmap, either powered by Leaflet or OpenLayers. This plugin is aptly called [qgis2web](https://plugins.qgis.org/plugins/qgis2web/). Below is an example map created by the workshop author for the BC Disaster Resilience Research Network:
+If you’re familiar with [QGIS](https://qgis.org/), there’s actually a nifty plugin for turning your QGIS map into an interactive web map, either powered by Leaflet or OpenLayers. This plugin is aptly called [qgis2web](https://plugins.qgis.org/plugins/qgis2web/). Below is an example map created by the workshop author for the BC Disaster Resilience Research Network:
 
  <iframe src="https://lilydemet.github.io/island-mapping/" style="width:100%; height:600px;"></iframe>
 
 
 #### qgs2web Advantages and Disadvantages
 {: .no_toc}
-- If you are somewhat familiar with QGIS, qgis2web is a super beginner-friendly way to make a web map. Especially if you aren't sure whether a web map is the right format for your project output, qgis2web is a quick way to visualize what it might look like. 
+- If you are somewhat familiar with QGIS, qgis2web is a super beginner-friendly way to make a web map. Especially if you aren't sure whether a web map is the right format for your project output, qgis2web is a great way to quickly visualize what your project might look like as a web map. 
 - A disadvantage is you will need somewhere to store your map and map data, such as Github or a local server.
  
 
@@ -76,7 +78,7 @@ If you’re familiar with [QGIS](https://qgis.org/), there’s actually a nifty 
 ----
 
 ## ArcGIS Online
-[ArcGIS Online](https://www.arcgis.com/index.html) or (AGOL) is Esri's online platform for making dynamic and interactive maps. If you are faculty or student at UBC, you can learn more about obtaining access [here](https://gis.ubc.ca/software/#:~:text=FOR%20STUDENT%20PERSONAL%20COMPUTERS&text=This%20%2420%20license%20includes%20ArcGIS,reduced%20cost%20is%20also%20available.&text=This%20is%20a%20non%2Drefundable,installed%20on%20personal%20computers%20only.).
+[ArcGIS Online](https://www.arcgis.com/index.html) or (AGOL) is Esri's online platform for making dynamic and interactive maps. If you are a UBC faculty or student, you can learn more about obtaining access [here](https://gis.ubc.ca/software/#:~:text=FOR%20STUDENT%20PERSONAL%20COMPUTERS&text=This%20%2420%20license%20includes%20ArcGIS,reduced%20cost%20is%20also%20available.&text=This%20is%20a%20non%2Drefundable,installed%20on%20personal%20computers%20only.).
 
 <iframe src='https://www.arcgis.com/apps/instant/basic/index.html?appid=23193586bdc34314a976d475e2cb867e' width="100%" height="500" style="border:none;"> </iframe>
 
@@ -159,7 +161,7 @@ Take a look at this basic [Leaflet map example](./leaflet-example.html). You can
 
 #### Leaflet Advantages  ⇡
 {: .no_toc}
- - Leaflet is free and open source. For this reason, Leaflet is widely used. 
+ - Leaflet is free and open-source. For this reason, Leaflet is widely used. 
  - As an open-source code library, Leaflet is hugely customizable. This means you can re-mix the code all you want. 
  - Leaflet is beginner friendly, though you do need to interact with code in order to build your map.
  - Hugely customizable. Leaflet-based plugins to give you some idea of the variety of added functionality that comes from the community of developers. 
