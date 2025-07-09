@@ -33,9 +33,9 @@ For example:
 
 <!-- ^^ could do demo about the above, and cite references drawn from...  -->
 
+<br><br>
 
-----
-#### Research Commons' Resources 
+### Research Commons' Resources 
 - Guide to project design when [telling spatial stories](https://ubc-library-rc.github.io/gis-spatial-stories/)
 - Archive of all [Research Commons workshops](https://ubc-library-rc.github.io/)
 - Research Commons [Events Calender](https://researchcommons.library.ubc.ca/workshops/)

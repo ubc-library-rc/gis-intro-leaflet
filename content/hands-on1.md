@@ -6,7 +6,7 @@ nav_order: 1
 ---
 # Open Data in Code Editor
 
-*1*{: .circle .circle-purple} First open the Visual Studio Code (VS Code) application. To open `webmapping-workshop` with VS Code, select Open... from the Welcome Page and navigate to your data folder is stored on your computer. Select it (but don't click into it) and hit Open. You can also click the Open Folder button in the Explorer pane, or press command + O. If you are having any trouble, ensure your data folder is unzipped.
+*1*{: .circle .circle-purple} First open the Visual Studio Code (VS Code) application. To open `webmapping-workshop` with VS Code, select Open... from the Welcome Page and navigate to your data folder is stored on your computer. Select it (but don't click *into* it) and hit Open. You can also click the Open Folder button in the Explorer pane, or press `command + O`. **If you are having any trouble, ensure your data folder is unzipped.**
 
 ![opening folder in vs code](./images/open-folder-vscode.png)
 

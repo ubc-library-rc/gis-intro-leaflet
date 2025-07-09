@@ -5,7 +5,7 @@ parent: Hands On with Leaflet
 nav_order: 7
 ---
 
-# Configure Popups
+# Configuring Popups
 {: .no_toc}
 
 Both the community gardens and parks layers contain attribute values for each feature. We got a glimpse of these when looking at the datasets in VS Code. Currently, if we click on the features in our web map, we cannot view this information because we haven't yet configured our map to load pop-ups for each layer. To add pop-ups with specified attribute information, we'll need to add more functions. 
@@ -56,6 +56,8 @@ If all went well, the name of each community garden should popup when you click.
 ![map of garden popups](./images/map10.png)
 
 
+----
+
 
 ## Naming Parks
 Naming polygons is the same as naming points. Replace the line of code that loads your parks layer with the following (but keep the styling function as is). 
@@ -78,7 +80,9 @@ L.geoJson(parks, { onEachFeature, style: style }).addTo(mymap);
 
 ![NEW SCRIPT ](./images/new-script.png)
 
-<br>
+
+----
+
 
 ## Elaborating Pop-ups
 Perhaps you want to convey more information in a pop-up than the name of each feature. If you want to add more than one attribute, you can string them together like so:
@@ -134,7 +138,7 @@ Copy/Paste
 ```
 <br>
 
-Consider commenting out the community gardens layer so you can see whether your addition was successful. 
+Consider commenting out the `community gardens` layer so you can see whether your addition was successful. 
 <br>
 
 ![image popup](./images/map12.png)

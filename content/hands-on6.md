@@ -79,7 +79,7 @@ Notice the data source we added in the `<head>` element locates the dataset in `
 ----
 
 
-## Add a polygon layer
+## Adding a polygon layer
 Adding a polygon layer is similar to adding a point layer. First, check the data file `parks-polygon.js` and note that the geoJSON data has been wrapped as a JavaScript variable called `parks`. 
 
 First, add a link to the data source in your web map's `<head>` element:
