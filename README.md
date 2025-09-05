@@ -1,4 +1,4 @@
-# Intro to Web Maps with Leaflet.js
+# Introduction to Web Maps with Leaflet.js
 ### UBC Library Research Commons
 
 
