@@ -25,6 +25,6 @@ It’s helpful to see your web-map change as you work. Live Server is an extensi
 <br>   
 *3*{: .circle .circle-purple} Because Leaflet is open source you don't need an account to work with it. You do, however, need to download the data for this workshop. Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
-[Download Data](./intro-leaflet-data.zip){: .btn .btn-blue }
+[Download Data](../webmapping-workshop.zip){: .btn .btn-blue }
 
 Now you're ready to begin web mapping with Leaflet!
